@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aesthetic gallery with responsive grid and sidebar using Bootstrap 5">
+    <meta name="keywords" content="gallery, bootstrap 5, responsive grid, sidebar, SEO">
+    <meta name="author" content="Your Name">
+    <title>Aesthetic Gallery</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Sidebar */
+        #sidebar {
+            width: 250px;
+            background: #f8f9fa;
+            transition: all 0.3s;
+            padding: 10px;
+            height: 100%;
+        }
+        #gallery-container{
+            background: #fff;
+        }
+
+        #sidebar.hide {
+            margin-left: -250px;
+        }
+
+        /* Gallery Grid */
+        .gallery-container {
+            margin-left: 260px;
+            padding: 15px;
+            transition: margin-left 0.3s;
+        }
+
+        .gallery-container.hide-sidebar {
+            margin-left: 10px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            background-color: #f1f1f1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .toggle-sidebar {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            padding: 5px;
+            background: #007bff;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        
+
+        .header-bg-costume{
+            height: 48vh;
+            /* height: 60vh; */
+            background-image: url('./assets/img/beach_cleansing.svg'); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .header-text-costume {
+            top: 26vh;
+            padding: 1rem;
+            text-align: center;
+        }
+        .bright-switch {
+            padding: 0 10px;
+        }
+        .light-bright-indicator, 
+        .light-dark-indicator{
+            padding-right: 10px;
+        }
+        .navbar-brand {
+            margin-left: var(--bs-navbar-brand-margin-end);
+        }
+
+        [class*=sidebar-dark-] .nav-header {
+            background-color: inherit;
+            color: #d0d4db;
+        }
+        .nav-sidebar .nav-header{
+            font-size: .9rem;
+            padding: .5rem .75rem;
+        }
+        .costume-h-10{
+            height: 3vh;
+        }
+    </style>
+</head>
+
+<body >
+    <!-- Sidebar -->
+    <div id="sidebar" class="d-flex flex-column fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-2 bg-white rounded">
+            <h5 class="px-3 text-center">May Suichika</h5>
+        </nav>
+
+        <ul class="nav flex-column d-md-flex p-0 pt-lg-3 overflow-y-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="#home"><span class="fa fa-home"></span> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d-flex" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="fa fa-tags me-1 mt-1 fs-6"></span> Category <div class="dropdown-toggle w-100 text-right"> </div>
+                </a>
+                <div class="collapse" id="collapseExample">
+                    <ul class="list-unstyled ms-3">
+                        <li><a class="nav-link" href="#link1"><i class="fa fa-heart"></i> Mizugi </a></li>
+                        <li><a class="nav-link" href="#link2"><i class="fa fa-palette"></i> Anime Character</a></li>
+                        <li><a class="nav-link" href="#link3"><i class="fa fa-dice-two"></i> Game Character</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about"><span class="fa fa-user "></span> About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact"><span class="fa fa-envelope "></span> Contact</a>
+            </li>
+
+        </ul>
+    
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+            <span>Comming Soon</span>
+        </h6>
+        <ul class="nav flex-column d-md-flex p-0 pt-lg-3 overflow-y-auto">
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fa fa-star"></i> ??? - FGO Character
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fa fa-star"></i> ?????????????
+                </a>
+            </li>
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+            <span>Project</span>
+        </h6>
+        <ul class="nav flex-column d-md-flex p-0 pt-lg-3 overflow-y-auto">
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fa fa-star"></i> ???
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="gallery-container  p-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top rounded">
+            
+            <div class="container-fluid">
+                <button class="sidebar-toggle btn btn-primary ">☰</button>
+
+                <a class="navbar-brand" href="./">Miichika</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="bright-switch d-flex">
+                        <div class="light-bright-indicator">
+                            <span class="fa fa-sun"></span>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        </div>
+                        <div class="light-dark-indicator">
+                            <span class="fa fa-moon"></span>
+                        </div>
+                    </div>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                </div>
+            </div>
+        </nav>
+        
+        <header class="text-black text-left py-3s">
+            <div class="header-bg-costume"></div>
+            <div class="header-text-costume position-absolute row g-2 text-center">
+                <h1>Miichika</h1>
+                <p>Welcome to my website</p>
+            </div>
+        </header>
+
+
+        <div class="row g-3">
+
+            <div class="text-center">
+                <h2><b>Found Me</b></h2>
+            </div>
+             <div class="position-relative costume-h-10">
+                <div class="position-absolute top-50 start-50 translate-middle mt-2 md-3">
+                    <a href="" class="btn btn-dark m-2">
+                        <span class="fab fa-facebook fs-5"></span>
+                    </a>
+                    <a href="" class="btn btn-dark m-2">
+                        <span class="fab fa-instagram fs-5"></span>
+                    </a> 
+                    <a href="" class="btn btn-dark m-2">
+                        <span class="fab fa-pinterest fs-5"></span>
+                    </a>
+                    <a href="" class="btn btn-dark m-2">
+                        <span class="fab fa-deviantart fs-5"></span>
+                    </a>
+                </div>
+              </div>
+            <!-- <span class="fa-brands fa-facebook"></span> -->
+         </div>
+
+
+        <div class="row g-3 mt-5">
+
+            <div class="text-center">
+                <h2><b>Gallery</b></h2>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img src="./assets/img/by/miichika/JJK_Zenin Maki_bG.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Zenin Maki from Jujutsu Kaisen Season 2 Form">
+
+                    <img src="./assets/img/by/miichika/MDD_kitagawa_marin_pose_1.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 2">
+                    <img src="./assets/img/by/miichika/FBJ_Frieren.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 2">
+                </div>
+
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img src="./assets/img/by/miichika/MDD_kitagawa_marin_pose_2.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 3">
+                    <img src="./assets/img/by/miichika/CSM_Makima.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 4">
+
+                    <img src="./assets/img/by/miichika/MDD_kitagawa_marin_pose_3.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 4">
+                    
+                </div>
+
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img src="./assets/img/by/miichika/SOG_Maya Kumashiro.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 3">
+                    <img src="./assets/img/by/miichika/Danmachi_riveria_alf.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 4">
+
+                    <img src="./assets/img/by/miichika/ZOM100_shizuka_mikazuki.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 4">
+                    
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-primary"> <span class="fas fa-arrows-rotate"></span> <i class="fal fa-arrows-rotate"></i> <i class="fa fa-refresh"></i>  more</button>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white mt-4">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Us</h5>
+                        <p>We are passionate about showcasing the best visual content. Explore our gallery for inspiration and creativity.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Home</a></li>
+                            <li><a href="#" class="text-white">Gallery</a></li>
+                            <li><a href="#" class="text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <p>Email: mayreekuu@gmail.com</p>
+                        <p>Phone: -</p>
+                        <p>Address: -</p>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <p>&copy; 2024 Miichika's Gallery. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="onload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- Add this line to your code -->
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Under Construction! </h5>
+                </div>
+                <div class="modal-body">
+                    This site still not completely build, we will helpfully if you wanna give some advice for us.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- And the relavant closing div tag -->
+    
+    
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+
+    <!-- Custom JS -->
+    <script>
+        // window.onload = () => {
+        //     $('#onload').modal('show');
+        // }
+
+        document.querySelector('.sidebar-toggle').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('hide');
+            document.querySelector('.gallery-container').classList.toggle('hide-sidebar');
+        });
+
+
+        let data = 
+            {
+                "categories":[
+                    {
+                        "name":"Drawing Method",
+                        "slug":"drawing-method",
+                        "describe":"",
+                        "data":[
+                            {
+                                "name":"redraw",
+                                "slug":"redraw",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":""
+                            },
+                            {
+                                "name":"tracing",
+                                "slug":"tracing",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":""
+                            }
+                        ],
+                    },
+
+                    {
+                        "name":"Character Type",
+                        "slug":"character-type",
+                        "describe":"",
+                        "data":[
+                            {
+                                "name":"Original Character",
+                                "slug":"original-character",
+                                "synonym":"",
+                                "abbreviation":"OC",
+                                "describe":""
+                            },
+                            {
+                                "name":"Anime Character",
+                                "slug":"Anime-character",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":""
+                            },
+                            {
+                                "name":"Manga Character",
+                                "slug":"Manga-character",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":""
+                            },
+                            {
+                                "name":"Game Character",
+                                "slug":"Game-character",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":""
+                            }
+                        ],
+                    },
+                    {
+                        "name":"Type File",
+                        "slug":"type-file",
+                        "describe":"",
+                        "data":[
+                            {
+                                "name":"Original",
+                                "slug":"original",
+                                "describe":"",
+                                "data":[
+                                    {
+                                        "name":"Vector",
+                                        "slug":"vector",
+                                        "synonym":"",
+                                        "abbreviation":"",
+                                        "describe":""
+                                    },
+                                    {
+                                        "name":"Scalable Vector Graphics",
+                                        "slug":"svg",
+                                        "synonym":"SVG",
+                                        "abbreviation":"SVG",
+                                        "describe":""
+                                    },
+                                ]
+                            },
+                            {
+                                "name":"Exported",
+                                "slug":"type-file",
+                                "describe":"",
+                                "data":[
+                                    {
+                                        "name":"Portable Network Graphic",
+                                        "slug":"png",
+                                        "synonym":"PNG",
+                                        "abbreviation":"PNG",
+                                        "describe":""
+                                    },
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Eyes Color",
+                        "slug":"eyes-color",
+                        "describe":"",
+                        "data":[
+                            {
+                                "name":"Black",
+                                "slug":"black",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Yellow",
+                                "slug":"yellow",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Red",
+                                "slug":"red",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Blue",
+                                "slug":"blue",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Silver",
+                                "slug":"silver",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up",
+                            },
+                            {
+                                "name":"White",
+                                "slug":"white",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up",
+                            }
+                        ],
+                    },
+
+                    {
+                        "name":"Hair Color",
+                        "slug":"hair-color",
+                        "describe":"",
+                        "data":[
+                            {
+                                "name":"Black",
+                                "slug":"black",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Blonde",
+                                "slug":"blonde",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Red",
+                                "slug":"red",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Blue",
+                                "slug":"blue",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Silver",
+                                "slug":"silver",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"White",
+                                "slug":"white",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            }
+                        ],
+                    },
+                    {
+                        "name":"Hair Styler",
+                        "slug":"hair-style",
+                        "describe":"",
+                        "data":[
+                            {
+                                "name":"Twintail",
+                                "slug":"twintail",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Ponytail",
+                                "slug":"ponytail",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Stright",
+                                "slug":"stright",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Short",
+                                "slug":"short",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Braid",
+                                "slug":"braid",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            }
+                        ],
+                    },
+                    {
+                        "name":"Poses",
+                        "slug":"poses",
+                        "describe":"",
+                        "data":[
+                            {
+                                "name":"Stand",
+                                "slug":"stand",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Sexy",
+                                "slug":"sexy",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Nap",
+                                "slug":"nap",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            },
+                            {
+                                "name":"Sit",
+                                "slug":"sit",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":"up"
+                            }
+                        ],
+                    },
+                    {
+                        "name":"Outfit",
+                        "slug":"outfit",
+                        "describe":"",
+                        "data":[
+                            {
+                                "name":"Bikini",
+                                "slug":"bikini",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":""
+                            },
+                            {
+                                "name":"Swin suit",
+                                "slug":"stand",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":""
+                            },
+                            {
+                                "name":"Uniform",
+                                "slug":"Uniform",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":""
+                            },
+                            {
+                                "name":"Sport suit",
+                                "slug":"Sport suit",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":""
+                            },
+                            {
+                                "name":"Casual",
+                                "slug":"Casual",
+                                "synonym":"",
+                                "abbreviation":"",
+                                "describe":"",
+                                "marge":""
+                            }
+                        ],
+                    },                
+                
+                ]
+            }
+    </script>
+</body>
+
+</html>
