@@ -1,0 +1,104 @@
+/* Sidebar */
+#sidebar {
+    width: 250px;
+    background: #f8f9fa;
+    transition: all 0.3s;
+    padding: 10px;
+    height: 100%;
+}
+#gallery-container{
+    background: #fff;
+}
+
+#sidebar.hide {
+    margin-left: -250px;
+}
+
+/* Gallery Grid */
+.gallery-container {
+    margin-left: 260px;
+    padding: 15px;
+    transition: margin-left 0.3s;
+}
+
+.gallery-container.hide-sidebar {
+    margin-left: 10px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #f1f1f1;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.toggle-sidebar {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    padding: 5px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+.header-bg-costume{
+    height: 48vh;
+    /* height: 60vh; */
+    background-image: url('./assets/img/beach_cleansing.svg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-text-costume {
+    top: 26vh;
+    padding: 1rem;
+    text-align: center;
+}
+.bright-switch {
+    padding: 0 10px;
+}
+.light-bright-indicator, 
+.light-dark-indicator{
+    padding-right: 10px;
+}
+.navbar-brand {
+    margin-left: var(--bs-navbar-brand-margin-end);
+}
+
+[class*=sidebar-dark-] .nav-header {
+    background-color: inherit;
+    color: #d0d4db;
+}
+.nav-sidebar .nav-header{
+    font-size: .9rem;
+    padding: .5rem .75rem;
+}
+.costume-h-10{
+    height: 3vh;
+}
+
+hr {
+    height: 7px;
+    width: 100%;
+    background: #0000004d;
+    border: 0;
+    clip-path: polygon(100% 50%, 50% 100%, 0 100%);
+}
