@@ -113,6 +113,14 @@
         .costume-h-10{
             height: 3vh;
         }
+
+        hr {
+            height: 7px;
+            width: 100%;
+            background: #0000004d;
+            border: 0;
+            clip-path: polygon(100% 50%, 50% 100%, 0 100%);
+        }
     </style>
 </head>
 
@@ -140,7 +148,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about"><span class="fa fa-user "></span> About</a>
+                <a class="nav-link" href="javascript:void(0);" onclick="about();"><span class="fa fa-user "></span> About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contact"><span class="fa fa-envelope "></span> Contact</a>
@@ -174,6 +182,19 @@
                 </a>
             </li>
         </ul>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+            <span>Progress</span>
+        </h6>
+        <ul class="nav flex-column d-md-flex p-0 pt-lg-3 overflow-y-auto">
+            <li class="nav-item">
+                <a class="nav-link">
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 13%">13%</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
     </div>
 
     <div class="gallery-container  p-2">
@@ -189,7 +210,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="javascript:void(0);" onclick="about();">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
@@ -213,7 +234,7 @@
                     </div>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
                       </form>
                 </div>
             </div>
@@ -231,56 +252,55 @@
         <div class="row g-3">
 
             <div class="text-center">
-                <h2><b>Found Me</b></h2>
+                <h2><b>Find Me Up!</b></h2>
+                <hr>
             </div>
              <div class="position-relative costume-h-10">
                 <div class="position-absolute top-50 start-50 translate-middle mt-2 md-3">
-                    <a href="" class="btn btn-dark m-2">
+                    <a href="https://www.facebook.com/profile.php?id=61564292093388" class="btn btn-dark m-2">
                         <span class="fab fa-facebook fs-5"></span>
                     </a>
-                    <a href="" class="btn btn-dark m-2">
+                    <a href="https://www.instagram.com/may_suichika/" class="btn btn-dark m-2">
                         <span class="fab fa-instagram fs-5"></span>
                     </a> 
-                    <a href="" class="btn btn-dark m-2">
+                    <a href="https://www.pinterest.jp/me_ichika/" class="btn btn-dark m-2">
                         <span class="fab fa-pinterest fs-5"></span>
                     </a>
-                    <a href="" class="btn btn-dark m-2">
+                    <a href="https://www.deviantart.com/miichika" class="btn btn-dark m-2">
                         <span class="fab fa-deviantart fs-5"></span>
                     </a>
                 </div>
               </div>
-            <!-- <span class="fa-brands fa-facebook"></span> -->
-         </div>
-
+        </div>
 
         <div class="row g-3 mt-5">
 
             <div class="text-center">
                 <h2><b>Gallery</b></h2>
             </div>
-
+            <hr>
 
             <div class="row">
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="./assets/img/by/miichika/JJK_Zenin Maki_bG.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Zenin Maki from Jujutsu Kaisen Season 2 Form">
+                    <img src="./assets/img/by/miichika/JJK_Zenin Maki_bG.png" class="w-100 shadow-1-strong border border-dark rounded mt-4" alt="Zenin Maki from Jujutsu Kaisen Season 2 Form">
 
-                    <img src="./assets/img/by/miichika/MDD_kitagawa_marin_pose_1.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 2">
-                    <img src="./assets/img/by/miichika/FBJ_Frieren.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 2">
+                    <img src="./assets/img/by/miichika/MDD_kitagawa_marin_pose_1.png" class="w-100 shadow-1-strong border border-dark rounded mt-4" alt="Image 2">
+                    <img src="./assets/img/by/miichika/FBJ_Frieren.png" class="w-100 shadow-1-strong border border-dark rounded mt-4" alt="Image 2">
                 </div>
 
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="./assets/img/by/miichika/MDD_kitagawa_marin_pose_2.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 3">
-                    <img src="./assets/img/by/miichika/CSM_Makima.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 4">
+                    <img src="./assets/img/by/miichika/MDD_kitagawa_marin_pose_2.png" class="w-100 shadow-1-strong border border-dark rounded mt-4" alt="Image 3">
+                    <img src="./assets/img/by/miichika/CSM_Makima.png" class="w-100 shadow-1-strong border border-dark rounded mt-4" alt="Image 4">
 
-                    <img src="./assets/img/by/miichika/MDD_kitagawa_marin_pose_3.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 4">
+                    <img src="./assets/img/by/miichika/MDD_kitagawa_marin_pose_3.png" class="w-100 shadow-1-strong border border-dark rounded mt-4" alt="Image 4">
                     
                 </div>
 
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="./assets/img/by/miichika/SOG_Maya Kumashiro.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 3">
-                    <img src="./assets/img/by/miichika/Danmachi_riveria_alf.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 4">
+                    <img src="./assets/img/by/miichika/SOG_Maya Kumashiro.png" class="w-100 shadow-1-strong border border-dark rounded mt-4" alt="Image 3">
+                    <img src="./assets/img/by/miichika/Danmachi_riveria_alf.png" class="w-100 shadow-1-strong border border-dark rounded mt-4" alt="Image 4">
 
-                    <img src="./assets/img/by/miichika/ZOM100_shizuka_mikazuki.png" class="w-100 shadow-1-strong border border-dark rounded" alt="Image 4">
+                    <img src="./assets/img/by/miichika/ZOM100_shizuka_mikazuki.png" class="w-100 shadow-1-strong border border-dark rounded mt-4" alt="Image 4">
                     
                 </div>
             </div>
@@ -333,7 +353,51 @@
                 </div>
             </div>
         </div>
-    </div> <!-- And the relavant closing div tag -->
+    </div>
+
+    <div class="modal fade" id="profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- Add this line to your code -->
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">About</h5>
+                    <button type="button" class="btn-close text-right" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                    <div class="container mt-2 mb-2 p-3 d-flex justify-content-center"> 
+                        <div class="card p-4"> 
+                            <div class=" image d-flex flex-column justify-content-center align-items-center"> 
+                                <button class="btn btn-secondary rounded-circle"> <img  class="rounded-circle" src="./assets/img/miichika_profile.png" height="100" width="100" /></button> 
+                                <span class="name mt-3"><b>May Suichika</b></span> <span class="idd">@miichika</span> 
+                                <div class="d-flex flex-row justify-content-center align-items-center gap-2"> 
+                                    
+                                    <span class="idd1 text-strong"><b>Drawing Enthusiasm</b></span> 
+                                    <!-- <span><i class="fa fa-copy"></i></span>  -->
+                                </div>
+
+                                <div class="text mt-3 text-center"> 
+                                    <span>他の 旗を立てる。🏁<br>
+                                    A tracer.🌸 Improve drawing skill.🎨<br>
+                                    Redraw & trace Masterpiece🍨 as a new cheap copy☕️.<br>
+                                    </span>
+                                </div> 
+                                <div class="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center"> 
+                                    <a href="https://www.facebook.com/profile.php?id=61564292093388" class="text-black"><span><i class="fab fa-facebook-square"></i></span></a>                                    
+                                    <a href="https://www.pinterest.jp/me_ichika/" class="text-black"><span><i class="fab fa-pinterest"></i></span></a>
+                                    <a href="https://www.deviantart.com/miichika" class="text-black"><span><i class="fab fa-deviantart"></i></span></a>
+                                    <a href="https://www.instagram.com/may_suichika/" class="text-black"><span><i class="fab fa-instagram"></i></span></a>
+                                    <a href="https://www.blogger.com/profile/02605531944807365696" class="text-black"><span><i class="fab fa-blogger"></i></span></a>
+                                </div> 
+                                <div class=" px-2 rounded mt-4 date "> 
+                                    <span class="join">Joined May,2022</span> 
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
     
     
 
@@ -349,6 +413,10 @@
         // window.onload = () => {
         //     $('#onload').modal('show');
         // }
+
+        function about(){
+            $('#profile').modal('show');
+        }
 
         document.querySelector('.sidebar-toggle').addEventListener('click', function () {
             document.getElementById('sidebar').classList.toggle('hide');
