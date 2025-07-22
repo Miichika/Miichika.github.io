@@ -1,11 +1,30 @@
 /* Sidebar */
 #sidebar {
     width: 250px;
-    background: #f8f9fa;
+    background: #2d3032;
     transition: all 0.3s;
     padding: 10px;
     height: 100%;
 }
+
+a.nav-link:hover {
+    background: #FFF !important;
+    color: #9615DB !important;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+a.nav-link {
+    color: #FFF !important;
+}
+
+h6.sidebar-heading{
+    color: #D2D3D3 !important;
+}
+.no-hover:hover{
+pointer-events: none;
+}
+
 #gallery-container{
     background: #fff;
 }
@@ -53,10 +72,10 @@
 
 
 
-.header-bg-costume{
-    height: 48vh;
+.header-bg-costume {
+    height: 42rem;
     /* height: 60vh; */
-    background-image: url('./assets/img/beach_cleansing.svg'); 
+    background-image: url('../img/beach_cleansing.svg'); 
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -68,8 +87,9 @@
     flex-direction: column;
 }
 .header-text-costume {
-    top: 26vh;
-    padding: 1rem;
+    top: 12rem;
+    padding: 10rem;
+    /*padding: 1rem;*/
     text-align: center;
 }
 .bright-switch {
@@ -101,4 +121,119 @@ hr {
     background: #0000004d;
     border: 0;
     clip-path: polygon(100% 50%, 50% 100%, 0 100%);
+}
+
+
+    .modal-dialog-fullscreen {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide img {
+      width: 100%;
+      object-fit: contain;
+    }
+    .swiper-thumb img {
+      height: 80px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .swiper-thumb {
+      height: 100px;
+    }
+
+    img.thumb.img-thumbnail{
+      width: 12rem;
+    }
+
+
+    .galleryRow{
+        position: relative;
+        width: 100%;
+        height: 30vw;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 45%;
+        cursor: pointer;
+    }
+
+    .overlayRowBody {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0.6;
+      transition: .5s ease;
+      /*background-color: #008CBA;*/
+    }
+
+    .eachCharacterName{
+        position: relative;
+        color: #fff;
+        background: rgb(34 34 34 / 35%);
+        width: 20px;
+        padding: 2px 5px;
+        text-align: center;
+        border-bottom: solid 1px #222;
+        font-size: 14px;
+    }
+
+    .overlayTitle{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0
+    }
+
+    .galleryRow:hover .overlayRowBody {
+        opacity: 0;
+    }
+    .galleryRow:hover .overlayTitle {
+        opacity: 1;
+    }
+
+
+    .galleryRowList {
+        position: relative;
+        width: 100%;
+        height: 8rem;
+        background-position-x: 0%;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+
+.bg-resene  {
+    background: #2d3032!important;
+}
+
+.bg-singaporeOrchid{
+    background: #9615DB !important;
+}
+
+.text-singaporeOrchid{
+    color: #9615DB !important;
+}
+
+.border-singaporeOrchid{
+    border-color: #9615DB !important;
+}
+
+.text-shadeOfCyan{
+    color: #7d7f80 !important;
+}
+
+.text-resene{
+    color: #2d3032 !important;
 }
