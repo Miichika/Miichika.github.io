@@ -25,6 +25,17 @@ h6.sidebar-heading{
 pointer-events: none;
 }
 
+/* div#imagePageOriginalCharacter {
+    padding: 8vh 2vh;
+} */
+.carouselControlSecondSection span{
+    color: #2f2f2f;
+    font-size: 2.5rem;
+}
+#imagePageOriginalCharacter div.carousel-item{
+    border-bottom: 0!important;
+}
+
 #gallery-container{
     background: #fff;
 }
@@ -73,7 +84,8 @@ pointer-events: none;
 
 
 .header-bg-costume {
-    height: 42rem;
+    /* height: 42rem; */
+    height: 54rem;
     /* height: 60vh; */
     background-image: url('../img/beach_cleansing.svg'); 
     background-size: cover; 
@@ -154,7 +166,7 @@ hr {
     .galleryRow{
         position: relative;
         width: 100%;
-        height: 30vw;
+        height: 32rem;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -173,6 +185,12 @@ hr {
       opacity: 0.6;
       transition: .5s ease;
       /*background-color: #008CBA;*/
+    }
+
+    .eachCharacterName.special{
+        display: inline-block;
+        border-bottom: solid 0!important;
+        border-right: solid 1px #222;
     }
 
     .eachCharacterName{
