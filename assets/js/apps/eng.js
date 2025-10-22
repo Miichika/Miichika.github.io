@@ -11,22 +11,43 @@
                 $('.thumb').eq(e.to).addClass('active');
             });
 
+            $('#carouselOCIndicators').on('slide.bs.carousel', function (e) {
+                $('.thumbOC').removeClass('active');
+                $('.thumbOC').eq(e.to).addClass('active');
+            });
+
+
 
             $('.thumb').eq(0).addClass('active');
+            $('.thumbOC').eq(2).addClass('active');
 
 
-            var carousel = $('#carouselModalIndicators');
+            // let carousel = ;
+            // var carousel = document.getElementById('carouselModalIndicators')
+
+            // const checkbox = document.getElementById("toggleShield");
+            // const captions = document.querySelectorAll(".carousel-caption");
+
+            // checkbox.addEventListener("change", () => {
+            //     captions.forEach(caption => {
+            //     if (checkbox.checked) {
+            //         caption.classList.add("shield");
+            //     } else {
+            //         caption.classList.remove("shield");
+            //     }
+            //     });
+            // });
 
             $('#autoSlideToggle').change(function () {
               if ($(this).is(':checked')) {
-                carousel.carousel('cycle');
+                $('#carouselModalIndicators').carousel('cycle');
               } else {
-                carousel.carousel('pause');
+                $('#carouselModalIndicators').carousel('pause');
               }
             });
 
             if (!$('#autoSlideToggle').is(':checked')) {
-              carousel.carousel('pause');
+              $('#carouselModalIndicators').carousel('pause');
             }
 
             let imgResReDrawAnime = generateImagePage(dataImageReDrawAnime);
@@ -58,7 +79,7 @@
                 // console.log(id);
                 // console.log(dataImage);
 
-                let singleData = searchDataById(dataImage, id);
+                let singleData = searchDataById(dataAllGallery, id);
                 let socialLinkData = generateSocialLink(singleData['published_link']);
                 let imageLoadData = generateImageList(singleData);
                 let detailData = {};
@@ -67,11 +88,7 @@
                     detailData = singleData['detail']['en']
                 }
 
-                console.log(detailData['title']);
-                console.log(detailData);
-                console.log(socialLinkData);
-                console.log(imageLoadData['view']);
-                console.log(imageLoadData['thumbnail']);
+
 
                 $('#projectModalTitle').text(detailData['title']);
                 $('#projectModalDecribes').html(detailData['describe']);
@@ -79,7 +96,7 @@
                 $("#imageLists").html(imageLoadData['view']);
                 $("#imageRails").html(imageLoadData['thumbnail']);
 
-                console.log(singleData);
+
                 $("#sliderModal").modal('show');
 
             });
@@ -92,18 +109,27 @@
             function generateSocialLink(data) {
                 let result = "";
 
-                console.log(data);
+
                 for (let i = 0; i < data.length; i++) {
                     if (data[i]['name'] == 'Pinterest' && data[i]['url'] != '-') {
-                        let socialButton = '<a href="'+data[i]['url']+'"><span class="fab fa-deviantart"></span></a>';
+                        let socialButton = '<a href="'+data[i]['url']+'" class="mx-1 pinterest"><span class="fab fa-pinterest "></span></a>';
                         result = result+socialButton;
                     }
                     else if (data[i]['name'] == 'Deviantart' && data[i]['url'] != '-') {
-                        let socialButton = '<a href="'+data[i]['url']+'"><span class="fab fa-pinterest"></span></a>';
+                        let socialButton = '<a href="'+data[i]['url']+'" class="mx-1 deviantart"><span class="fab fa-deviantart "></span></a>';
                         result = result+socialButton;
                     }
                     else if (data[i]['name'] == 'Pixiv' && data[i]['url'] != '-') {
-                        let socialButton = '<a href="'+data[i]['url']+'"><span class="fa-brands fa-pixiv"></span></a>';
+                        let socialButton = '<a href="'+data[i]['url']+'" class="mx-1 pixiv"><span class="fa-brands fa-pixiv "></span></a>';
+                        result = result+socialButton;
+
+                    }
+                    else if (data[i]['name'] == 'Instagram' && data[i]['url'] != '-') {
+                        let socialButton = '<a href="'+data[i]['url']+'" class="mx-1 instagram"><span class="fa-brands fa-instagram "></span></a>';
+                        result = result+socialButton;
+
+                    }else if (data[i]['name'] == 'Youtube' && data[i]['url'] != '-') {
+                        let socialButton = '<a href="'+data[i]['url']+'" class="mx-1 youtube"><span class="fa-brands fa-youtube "></span></a>';
                         result = result+socialButton;
 
                     }
@@ -114,36 +140,67 @@
 
 
             function generateImageList(data) {
-                console.log(data);
                 let result = {};
                 let resultData = "";
                 let resultImgThumbnail = "";
+                let wSliderDefault = "w-50";
+                // data['style']['slider']
+                
+
 
                 if (data['type'] == 'sub-gallery') {
                     for (let i = 0; i < data['image'].length; i++) {
                         let imgRow = "";
+                        let slider = "";
+                        let wSlider = "";
+                        
+                        if(data['style']['slider'][i] != null){
+                           slider= data['style']['slider'][i];
+                        }else{
+                            wSlider = wSliderDefault;
+                        }
                         if (i == 0) {
                             imgRow = 
-                            `<div class="carousel-item active">                    
-                                <img src="`+data['image'][i]+`" class="d-block w-100" alt="...">  
+                            `<div class="carousel-item active">
+                                <center>
+                                    <img src="`+data['image'][i]+`" class="d-block `+wSlider+`" alt="..." style="`+slider+`">  
+                                </center>
                             </div>`;
                         }else{
                             imgRow = 
-                            `<div class="carousel-item">                    
-                                <img src="`+data['image'][i]+`" class="d-block w-100" alt="...">  
+                            `<div class="carousel-item">
+                                <center>
+                                    <img src="`+data['image'][i]+`" class="d-block `+wSlider+`" alt="..." style="`+slider+`">
+                                </center>
                             </div>`;
                         }
-
-                        let imgThumbnail = `<img src="`+data['image'][i]+`" class="thumb img-thumbnail" data-bs-target="#carouselModalIndicators" data-bs-slide-to="`+i+`">`;
+                        let rails = "";
+                        if(data['style']["rails"][i] != null){
+                           rails= data['style']["rails"][i];
+                        }
+                        
+                        let imgThumbnail = `
+                        <div class="imgEach">
+                            <img src="`+data['image'][i]+`" class="thumb img-thumbnail" data-bs-target="#carouselModalIndicators" data-bs-slide-to="`+i+`" style="`+rails+`">
+                        </div>`;
 
                         resultData = resultData+imgRow;
                         resultImgThumbnail = resultImgThumbnail+imgThumbnail;
                     }
                     
                 }else if (data['type'] == 'single') {
+                    let slider = "";
+                    let wSlider = "";
+                    if(data['style']['slider'][0] != null){
+                        slider= data['style']['slider'][0];
+                    }else{
+                        wSlider = wSliderDefault;
+                    }
                     let imgRow = 
-                        `<div class="carousel-item active">                    
-                            <img src="`+data['image']+`" class="d-block w-100" alt="...">  
+                        `<div class="carousel-item active">
+                            <center>    
+                                <img src="`+data['image']+`" class="d-block `+wSlider+`" alt="..." style="`+slider+`">
+                            </center>
                         </div>`;
 
                     resultData = imgRow;
@@ -271,7 +328,7 @@
                     }
 
                     // console.log(detailData);
-                    let getName = generateImageName(detailData['title']);
+                    // let getName = generateImageName(detailData['title']);
                     let singleData = data[i];
 
                     let getImage = '';
@@ -290,19 +347,39 @@
                     
                         // `+galleryRowConfig+`
 
-                    let composeImg = 
-                        `<div data-id="`+singleData['id']+`" class="galleryRow rounded-4" style="background-image: url(`+getImage+`);  `+singleData['style']['img']+`">
-                                <div class="overlayRowBody oc-overlay" style="`+singleData['style']['overlay']+`"></div>
-                                 `+getName+`
-                        </div>`;
+//                     if(i == 0){
 
-                    if (i == 0) {
-                        composeImg = '<div class="col-8">'+composeImg+'</div>';
-                    }else if(i == 1){
-                        composeImg = '<div class="col-4">'+composeImg;
-                    }else if(data.length == i){
-                        composeImg = composeImg+'</div>';
+// <div class="carousel-item active">
+//                               <img src="..." class="d-block w-100" alt="...">
+//                             </div>
+//                             <div class="carousel-item">
+//                               <img src="..." class="d-block w-100" alt="...">
+//                             </div>
+
+//                     }
+
+                    let composeImgStarted = '';
+                    if(i == 0){
+                        composeImgStarted = '<div class="carousel-item active">';
+                    }else {
+                        composeImgStarted = '<div class="carousel-item">';
                     }
+
+                    let composeImg = 
+                    // `+singleData['style']['img']+`
+                        composeImgStarted+`
+                            <div data-id="`+singleData['id']+`" class="galleryRow rounded-4" style="background-image: url(`+getImage+`);`+singleData['style']['img']+`  ">
+                                <div class="overlayRowBody oc-overlay" style="`+singleData['style']['overlay']+`"></div>
+                            </div>
+                        </div>`; // `+getName+`
+
+                    // if (i == 0) {
+                    //     composeImg = '<div class="col-12">'+composeImg+'</div>';
+                    // // }else if(i == 1){
+                    //     // composeImg = '<div class="col-4">'+composeImg;
+                    // }else if(data.length == i){
+                    //     composeImg = composeImg+'</div>';
+                    // }
 
 
                     resultData = resultData+composeImg;
