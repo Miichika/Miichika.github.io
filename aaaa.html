@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minimal Footer</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+    	
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background: #f7f7f7;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.site-footer {
+    position: relative;
+    width: min(100% - 30px, 1000px);
+
+    /* Float / align to the right */
+    margin-left: auto;
+    margin-right: 0;
+
+    margin-top: 80px;
+
+    color: #fff;
+}
+
+
+/* ================================
+   MAIN FLOATING FOOTER
+================================ */
+
+.footer-inner {
+    min-height: 70px;
+
+    display: flex;
+    align-items: stretch;
+
+    background: #303030;
+
+    /*
+       Creates the rounded left side
+       similar to the reference image.
+    */
+    border-radius: 40px 0 0 40px;
+
+    overflow: hidden;
+}
+
+
+/* ================================
+   FOOTER ITEMS
+================================ */
+
+.footer-item {
+    position: relative;
+
+    min-width: 135px;
+    padding: 10px 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.footer-item:hover {
+    background: #3a3a3a;
+    transform: translateY(-2px);
+}
+
+
+/* Small title */
+
+.footer-label {
+    font-size: 7px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    opacity: 0.75;
+
+    margin-bottom: 1px;
+}
+
+
+/* Large number */
+
+.footer-item strong {
+    font-size: 29px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+
+/* Description */
+
+.footer-item small {
+    margin-top: 2px;
+
+    font-size: 7px;
+    line-height: 10px;
+
+    opacity: 0.9;
+}
+
+.footer-item small i {
+    font-size: 6px;
+    margin-left: 3px;
+}
+
+
+/* ================================
+   STATUS DOT
+================================ */
+
+.status-dot {
+    display: inline-block;
+
+    width: 9px;
+    height: 9px;
+
+    margin-left: 5px;
+
+    border-radius: 50%;
+
+    background: #25d7df;
+
+    vertical-align: middle;
+
+    box-shadow: 0 0 8px rgba(37, 215, 223, 0.5);
+}
+
+
+/* ================================
+   WARNING AREA
+================================ */
+
+.footer-warning {
+    flex: 1;
+
+    min-width: 230px;
+
+    padding: 12px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-left: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer-warning h3 {
+    margin-bottom: 5px;
+
+    font-size: 12px;
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: -0.3px;
+}
+
+.footer-warning p {
+    font-size: 5px;
+    line-height: 7px;
+
+    letter-spacing: 0.25px;
+
+    opacity: 0.55;
+}
+
+
+/* ================================
+   BRAND
+================================ */
+
+.footer-brand {
+    width: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 7px;
+    font-weight: bold;
+
+    opacity: 0.7;
+}
+
+
+/* ================================
+   BOTTOM FOOTER
+================================ */
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 14px 5px 0 20px;
+
+    color: #333;
+}
+
+
+/* Copyright */
+
+.copyright {
+    font-size: 10px;
+    letter-spacing: 0.2px;
+
+    opacity: 0.6;
+}
+
+
+/* ================================
+   SOCIAL BUTTONS
+================================ */
+
+.social-links {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+}
+
+.social-links a {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #333;
+    text-decoration: none;
+
+    border: 1px solid #ddd;
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+    background: #303030;
+    border-color: #303030;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 800px) {
+
+    .site-footer {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .footer-inner {
+        border-radius: 30px;
+
+        flex-wrap: wrap;
+
+        padding: 10px;
+    }
+
+    .footer-item {
+        flex: 1 1 30%;
+        min-width: 110px;
+
+        border-radius: 20px;
+    }
+
+    .footer-warning {
+        flex: 1 1 70%;
+        min-width: 200px;
+    }
+
+    .footer-brand {
+        display: none;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 520px) {
+
+    .site-footer {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer-inner {
+        border-radius: 25px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 3px;
+
+        padding: 8px;
+    }
+
+    .footer-item {
+        min-width: 0;
+        padding: 15px;
+
+        border-radius: 18px;
+    }
+
+    .footer-item strong {
+        font-size: 25px;
+    }
+
+    .footer-warning {
+        grid-column: 1 / -1;
+
+        min-width: 0;
+
+        padding: 15px;
+        border-left: none;
+
+        border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+        padding: 15px 5px;
+    }
+
+    .social-links {
+        width: 100%;
+    }
+
+    .social-links a {
+        width: 32px;
+        height: 32px;
+    }
+}
+    	
+    </style>
+</head>
+
+<body>
+
+    <!-- Your website content -->
+    <main>
+        <!-- Content goes here -->
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <!-- Gallery -->
+            <a href="#" class="footer-item footer-gallery">
+                <span class="footer-label">ARTWORK</span>
+                <strong>0100</strong>
+                <small>Go to Gallery <i class="fa-solid fa-arrow-up-right-from-square"></i></small>
+            </a>
+
+
+            <!-- Original -->
+            <a href="#" class="footer-item">
+                <span class="footer-label">ORIGINAL</span>
+                <strong>0100</strong>
+                <small>/001 Published <i class="fa-solid fa-arrow-up-right-from-square"></i></small>
+            </a>
+
+
+            <!-- Funart -->
+            <a href="#" class="footer-item">
+                <span class="footer-label">FUNART</span>
+                <strong>0100</strong>
+                <small>Journey <span class="status-dot"></span></small>
+            </a>
+
+
+            <!-- Warning -->
+            <div class="footer-warning">
+                <h3>Proceed With Caution</h3>
+
+                <p>
+                    ADDITIONAL VISUAL AREAS<br>
+                    MAY CONTAIN CONTENT NOT SUITABLE
+                    FOR ALL AUDIENCES.
+                </p>
+            </div>
+
+
+            <!-- Brand / logo -->
+            <div class="footer-brand">
+                <span>ALBUM</span>
+            </div>
+
+        </div>
+
+
+        <!-- Bottom information -->
+        <div class="footer-bottom">
+
+            <div class="copyright">
+                © 2026 Your Name. All Rights Reserved.
+            </div>
+
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" aria-label="DeviantArt">
+                    <i class="fa-brands fa-deviantart"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#" aria-label="Blogger">
+                    <i class="fa-brands fa-blogger-b"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

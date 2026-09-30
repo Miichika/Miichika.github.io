@@ -17,7 +17,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/costume.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
 
     <style type="text/css">
         .bg-slightlyDesaturatedOrange{
@@ -144,6 +143,501 @@
     }
 
     </style>
+
+        <style id="modern-gallery-upgrade">
+
+/* =========================================================
+   Modern Gallery Upgrade
+   Safe to keep alongside Bootstrap + costume.css.
+   ========================================================= */
+
+:root {
+    --gallery-bg: #f7f7f5;
+    --gallery-card: #ffffff;
+    --gallery-text: #202020;
+    --gallery-muted: #737373;
+    --gallery-border: rgba(0,0,0,.08);
+    --gallery-radius: 18px;
+    --gallery-shadow: 0 10px 35px rgba(0,0,0,.08);
+    --gallery-shadow-hover: 0 20px 55px rgba(0,0,0,.14);
+    --gallery-ease: cubic-bezier(.2,.7,.2,1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--gallery-bg);
+    color: var(--gallery-text);
+}
+
+/* Give the main content a quieter, more editorial feel. */
+.gallery-container {
+    background: var(--gallery-bg);
+    min-height: 100vh;
+}
+
+.gallery-container > .navbar {
+    box-shadow: 0 4px 20px rgba(0,0,0,.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 1030;
+}
+
+/* Section headings */
+.gallery-container h2,
+.gallery-container h3 {
+    letter-spacing: -.02em;
+}
+
+.gallery-container hr {
+    opacity: .12;
+}
+
+/* =========================================================
+   Gallery grids
+   ========================================================= */
+
+#imagePageReDrawAnime,
+#imagePageBudgeHuntDeviantArt,
+#imagePageBudgeDreamUp,
+#imagePageMizugiParty {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin: 0;
+}
+
+#imagePageReDrawAnime > *,
+#imagePageBudgeHuntDeviantArt > *,
+#imagePageBudgeDreamUp > *,
+#imagePageMizugiParty > * {
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    grid-column: span 1;
+}
+
+/* Let existing gallery items fill their new grid cells. */
+#imagePageReDrawAnime .galleryRow,
+#imagePageBudgeHuntDeviantArt .galleryRow,
+#imagePageBudgeDreamUp .galleryRow,
+#imagePageMizugiParty .galleryRow {
+    min-height: 260px;
+    height: 100%;
+    border-radius: var(--gallery-radius);
+    overflow: hidden;
+    position: relative;
+    cursor: zoom-in;
+    background-color: #e9e9e7;
+    background-size: cover !important;
+    background-position: center !important;
+    box-shadow: var(--gallery-shadow);
+    border: 1px solid var(--gallery-border);
+    isolation: isolate;
+    transition:
+        transform .45s var(--gallery-ease),
+        box-shadow .45s var(--gallery-ease);
+}
+
+/* A subtle image-like zoom when the card is hovered. */
+#imagePageReDrawAnime .galleryRow::before,
+#imagePageBudgeHuntDeviantArt .galleryRow::before,
+#imagePageBudgeDreamUp .galleryRow::before,
+#imagePageMizugiParty .galleryRow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    transform: scale(1);
+    transition: transform .7s var(--gallery-ease);
+    z-index: -2;
+}
+
+#imagePageReDrawAnime .galleryRow:hover,
+#imagePageBudgeHuntDeviantArt .galleryRow:hover,
+#imagePageBudgeDreamUp .galleryRow:hover,
+#imagePageMizugiParty .galleryRow:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--gallery-shadow-hover);
+}
+
+#imagePageReDrawAnime .galleryRow:hover::before,
+#imagePageBudgeHuntDeviantArt .galleryRow:hover::before,
+#imagePageBudgeDreamUp .galleryRow:hover::before,
+#imagePageMizugiParty .galleryRow:hover::before {
+    transform: scale(1.055);
+}
+
+/* Dark gradient for readable titles. */
+#imagePageReDrawAnime .overlayRowBody,
+#imagePageBudgeHuntDeviantArt .overlayRowBody,
+#imagePageBudgeDreamUp .overlayRowBody,
+#imagePageMizugiParty .overlayRowBody {
+    opacity: 0 !important;
+    background:
+        linear-gradient(
+            180deg,
+            transparent 35%,
+            rgba(0,0,0,.68) 100%
+        ) !important;
+    transition: opacity .35s ease;
+}
+
+#imagePageReDrawAnime .galleryRow:hover .overlayRowBody,
+#imagePageBudgeHuntDeviantArt .galleryRow:hover .overlayRowBody,
+#imagePageBudgeDreamUp .galleryRow:hover .overlayRowBody,
+#imagePageMizugiParty .galleryRow:hover .overlayRowBody {
+    opacity: 1 !important;
+}
+
+#imagePageReDrawAnime .overlayTitle,
+#imagePageBudgeHuntDeviantArt .overlayTitle,
+#imagePageBudgeDreamUp .overlayTitle,
+#imagePageMizugiParty .overlayTitle {
+    opacity: 0;
+    transform: translateY(8px);
+    transition:
+        opacity .3s ease,
+        transform .3s var(--gallery-ease);
+    z-index: 2;
+}
+
+#imagePageReDrawAnime .galleryRow:hover .overlayTitle,
+#imagePageBudgeHuntDeviantArt .galleryRow:hover .overlayTitle,
+#imagePageBudgeDreamUp .galleryRow:hover .overlayTitle,
+#imagePageMizugiParty .galleryRow:hover .overlayTitle {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Regular images generated/placed inside gallery sections. */
+#imagePageReDrawAnime img,
+#imagePageBudgeHuntDeviantArt img,
+#imagePageBudgeDreamUp img,
+#imagePageMizugiParty img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 0 !important;
+    border-radius: var(--gallery-radius);
+    box-shadow: var(--gallery-shadow);
+    cursor: zoom-in;
+    transition:
+        transform .55s var(--gallery-ease),
+        filter .35s ease,
+        box-shadow .45s var(--gallery-ease);
+}
+
+#imagePageReDrawAnime img:hover,
+#imagePageBudgeHuntDeviantArt img:hover,
+#imagePageBudgeDreamUp img:hover,
+#imagePageMizugiParty img:hover {
+    transform: scale(1.018);
+    filter: brightness(.96);
+    box-shadow: var(--gallery-shadow-hover);
+}
+
+/* =========================================================
+   Original Character feature carousel
+   ========================================================= */
+
+#carouselOCSection {
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+#carouselOCSection .carousel-inner {
+    border-radius: 24px;
+}
+
+#carouselOCSection .carousel-item {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #eee;
+    border: 0;
+    border-radius: 24px;
+}
+
+#carouselOCSection .carousel-item img {
+    max-height: 620px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 14px;
+    transition: transform .7s var(--gallery-ease);
+}
+
+#carouselOCSection .carousel-item.active img {
+    animation: galleryImageIn .65s var(--gallery-ease) both;
+}
+
+#carouselOCSection .carousel-control-prev,
+#carouselOCSection .carousel-control-next {
+    width: 52px;
+    height: 52px;
+    top: 50%;
+    margin-top: -26px;
+    margin-inline: 14px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.88);
+    color: #111;
+    opacity: .75;
+    box-shadow: 0 8px 25px rgba(0,0,0,.12);
+    transition: transform .25s ease, opacity .25s ease;
+}
+
+#carouselOCSection .carousel-control-prev:hover,
+#carouselOCSection .carousel-control-next:hover {
+    opacity: 1;
+    transform: scale(1.06);
+}
+
+/* =========================================================
+   Modern lightbox
+   ========================================================= */
+
+.gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    background: rgba(10,10,10,.94);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .3s ease, visibility .3s ease;
+}
+
+.gallery-lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.gallery-lightbox__backdrop {
+    position: absolute;
+    inset: 0;
+    cursor: zoom-out;
+}
+
+.gallery-lightbox__content {
+    position: relative;
+    z-index: 2;
+    width: min(1200px, 94vw);
+    height: min(88vh, 900px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.gallery-lightbox__image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 30px 90px rgba(0,0,0,.45);
+    transform: scale(.96);
+    opacity: 0;
+    transition: transform .35s var(--gallery-ease), opacity .3s ease;
+    pointer-events: auto;
+    user-select: none;
+}
+
+.gallery-lightbox.is-open .gallery-lightbox__image {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.gallery-lightbox__close,
+.gallery-lightbox__prev,
+.gallery-lightbox__next {
+    position: absolute;
+    z-index: 4;
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 50%;
+    color: white;
+    background: rgba(255,255,255,.09);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: background .25s ease, transform .25s ease;
+}
+
+.gallery-lightbox__close:hover,
+.gallery-lightbox__prev:hover,
+.gallery-lightbox__next:hover {
+    background: rgba(255,255,255,.2);
+    transform: scale(1.07);
+}
+
+.gallery-lightbox__close {
+    top: 22px;
+    right: 22px;
+    font-size: 18px;
+}
+
+.gallery-lightbox__prev {
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gallery-lightbox__next {
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gallery-lightbox__prev:hover,
+.gallery-lightbox__next:hover {
+    transform: translateY(-50%) scale(1.07);
+}
+
+.gallery-lightbox__caption {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 22px;
+    transform: translateX(-50%);
+    max-width: min(700px, 80vw);
+    color: rgba(255,255,255,.9);
+    font-size: .9rem;
+    text-align: center;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(0,0,0,.38);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.gallery-lightbox__counter {
+    position: absolute;
+    z-index: 3;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,.8);
+    font-size: .8rem;
+    letter-spacing: .08em;
+}
+
+/* Prevent page scrolling while lightbox is open. */
+body.gallery-lightbox-open {
+    overflow: hidden;
+}
+
+@keyframes galleryImageIn {
+    from {
+        opacity: 0;
+        transform: scale(.97);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive grid */
+@media (max-width: 1199.98px) {
+    #imagePageReDrawAnime,
+    #imagePageBudgeHuntDeviantArt,
+    #imagePageBudgeDreamUp,
+    #imagePageMizugiParty {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767.98px) {
+    #imagePageReDrawAnime,
+    #imagePageBudgeHuntDeviantArt,
+    #imagePageBudgeDreamUp,
+    #imagePageMizugiParty {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    #imagePageReDrawAnime .galleryRow,
+    #imagePageBudgeHuntDeviantArt .galleryRow,
+    #imagePageBudgeDreamUp .galleryRow,
+    #imagePageMizugiParty .galleryRow {
+        min-height: 210px;
+        border-radius: 14px;
+    }
+
+    #carouselOCSection .carousel-item {
+        min-height: 300px;
+    }
+
+    .gallery-lightbox {
+        padding: 14px;
+    }
+
+    .gallery-lightbox__content {
+        width: 100%;
+        height: 82vh;
+    }
+
+    .gallery-lightbox__prev {
+        left: 8px;
+    }
+
+    .gallery-lightbox__next {
+        right: 8px;
+    }
+
+    .gallery-lightbox__close {
+        top: 10px;
+        right: 10px;
+    }
+
+    .gallery-lightbox__caption {
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    #imagePageReDrawAnime,
+    #imagePageBudgeHuntDeviantArt,
+    #imagePageBudgeDreamUp,
+    #imagePageMizugiParty {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Accessibility: don't force large animations on users who request less motion. */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
+
+        </style>
 </head>
 
 <body >
@@ -227,7 +721,7 @@
 
     <div class="gallery-container  p-2 hide-sidebar">
         <!-- Navbar -->
-            <nav id="top" class="navbar navbar-expand-lg navbar-light  bg-resene bg-light sticky-top rounded">
+            <nav class="navbar navbar-expand-lg navbar-light  bg-resene bg-light sticky-top rounded">
                 
                 <div class="container-fluid">
                     <button class="sidebar-toggle btn bg-singaporeOrchid text-white">☰</button>
@@ -601,106 +1095,61 @@
             </div> -->
         </div>
 
-        <!-- <p>We are passionate about showcasing the best visual content. Explore our gallery for inspiration and creativity.</p> -->
-
-
-        <footer class="site-footer">
-
-            <div class="footer-inner">
-
-                <!-- Gallery -->
-                <a href="#" class="footer-item footer-gallery">
-                    <span class="footer-label">ARTWORK</span>
-                    <strong>0067</strong>
-                    <small>Go to Gallery <i class="fa-solid fa-arrow-up-right-from-square"></i></small>
-                </a>
-
-
-                <!-- Original -->
-                <a href="#" class="footer-item">
-                    <span class="footer-label">ORIGINAL</span>
-                    <strong>0100</strong>
-                    <small>/001 Published <i class="fa-solid fa-arrow-up-right-from-square"></i></small>
-                </a>
-
-
-                <!-- Funart -->
-                <a href="#" class="footer-item">
-                    <span class="footer-label">FUNART</span>
-                    <strong>0100</strong>
-                    <small>Journey <span class="status-dot"></span></small>
-                </a>
-
-
-                <!-- Warning -->
-                <div class="footer-warning">
-                    <h3>Farewell Words</h3>
-
-                    <p>
-                        Thanks so much for wandering through my art gallery! <br>
-                        We're always looking for ways to improve, so please feel free to drop by again anytime. <br>
-                        Hope to see you on the next journey!
-                    </p>
+        <div class="container mt-3 mb-5 pb-5">
+            <div class="row ">
+                <div class="text-center">
+                    <h2><b>Find Me Up!</b></h2>
+                    <hr>
                 </div>
-
-
-                <!-- Brand / logo -->
-                <div class="footer-brand">
-                    <a href="#top"><span><i class="fa-solid fa-circle-chevron-up"></i></span></a>
+                <div class="position-relative costume-h-10">
+                    <div class="position-absolute top-50 start-50 translate-middle mt-2 md-3">
+                        <a href="https://www.facebook.com/people/Satsuki-Ichika" class="btn btn-dark m-2">
+                            <span class="fab fa-facebook fs-5"></span>
+                        </a>
+                        <a href="https://www.instagram.com/may_suichika/" class="btn btn-dark m-2">
+                            <span class="fab fa-instagram fs-5"></span>
+                        </a> 
+                        <a href="https://www.pinterest.jp/me_ichika/" class="btn btn-dark m-2">
+                            <span class="fab fa-pinterest fs-5"></span>
+                        </a>
+                        <a href="https://www.deviantart.com/miichika" class="btn btn-dark m-2">
+                            <span class="fab fa-deviantart fs-5"></span>
+                        </a>
+                        <a href="https://www.pixiv.net/en/users/109897327" class="btn btn-dark m-2">
+                            <span class="fa-brands fa-pixiv fs-5"></span>
+                        </a>
+                    </div>
                 </div>
-
             </div>
+        </div>
 
-        </footer>
-
-        <footer>
-            <!-- Bottom information -->
-            <div class="footer-bottom">
-
-                <div class="copyright">
-                    © 2026 May Suichika. All Rights Reserved.
+        <footer class="bg-resene text-white mt-4 rounded-2">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Us</h5>
+                        <p>We are passionate about showcasing the best visual content. Explore our gallery for inspiration and creativity.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Home</a></li>
+                            <li><a href="#" class="text-white">Gallery</a></li>
+                            <li><a href="#" class="text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <p>Email: -</p>
+                        <p>Phone: -</p>
+                        <p>Address: -</p>
+                    </div>
                 </div>
-
-
-                <div class="social-links">
-                    <a href="https://www.facebook.com/people/Satsuki-Ichika" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/may_suichika/" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="https://jp.pinterest.com/satsuki_ichika/" aria-label="Pinterest">
-                        <i class="fa-brands fa-pinterest-p"></i>
-                    </a>
-
-                    <a href="https://www.deviantart.com/miichika" aria-label="DeviantArt">
-                        <i class="fa-brands fa-deviantart"></i>
-                    </a>
-
-                    <a href="https://www.pixiv.net/en/users/109897327" aria-label="YouTube">
-                        <i class="fa-brands fa-pixiv"></i>
-                    </a>
-
-                    <a href="https://www.youtube.com/@satsuki.ichika" aria-label="YouTube">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-
-                    <a href="https://www.tiktok.com/@satsuki.ichika" aria-label="tiktok">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-
-                    <!-- <a href="#" aria-label="Blogger">
-                        <i class="fa-brands fa-blogger-b"></i>
-                    </a> -->
-                  
-
+                <div class="text-center mt-3">
+                    <p>&copy; 2025 May Suichika's Artworks. All rights reserved.</p>
                 </div>
-
             </div>
         </footer>
-
     </div>
 
 
@@ -918,13 +1367,9 @@
         </div>
       </div>
     </div>
+    
 
-
-
-
-
-
-
+    
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -945,6 +1390,246 @@
     //             delay += 500;
     //     });
     // });
+    </script>
+
+    <script id="modern-gallery-lightbox">
+
+/* =========================================================
+   Modern Gallery Lightbox
+   Works with both <img> elements and existing .galleryRow
+   background-image cards generated by data.js.
+   ========================================================= */
+(() => {
+    const galleryRoots = [
+        '#imagePageOriginalCharacter',
+        '#imagePageReDrawAnime',
+        '#imagePageBudgeHuntDeviantArt',
+        '#imagePageBudgeDreamUp',
+        '#imagePageMizugiParty'
+    ];
+
+    const selectors = galleryRoots.join(', ');
+    const items = [];
+    let currentIndex = 0;
+
+    const lightbox = document.createElement('div');
+    lightbox.className = 'gallery-lightbox';
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightbox.innerHTML = `
+        <div class="gallery-lightbox__backdrop" data-lightbox-close></div>
+        <div class="gallery-lightbox__counter" aria-live="polite"></div>
+
+        <button class="gallery-lightbox__close"
+                type="button"
+                aria-label="Close image viewer"
+                data-lightbox-close>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <button class="gallery-lightbox__prev"
+                type="button"
+                aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="gallery-lightbox__content">
+            <img class="gallery-lightbox__image"
+                 src=""
+                 alt="">
+        </div>
+
+        <button class="gallery-lightbox__next"
+                type="button"
+                aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="gallery-lightbox__caption"></div>
+    `;
+
+    document.body.appendChild(lightbox);
+
+    const imageEl = lightbox.querySelector('.gallery-lightbox__image');
+    const captionEl = lightbox.querySelector('.gallery-lightbox__caption');
+    const counterEl = lightbox.querySelector('.gallery-lightbox__counter');
+
+    function cleanUrl(value) {
+        if (!value) return '';
+        const match = value.match(/url\((['"]?)(.*?)\1\)/);
+        return match ? match[2] : value;
+    }
+
+    function getImageInfo(element) {
+        const img = element.matches('img')
+            ? element
+            : element.querySelector('img');
+
+        if (img?.currentSrc || img?.src) {
+            return {
+                src: img.currentSrc || img.src,
+                alt: img.alt || '',
+                title: img.alt || element.querySelector('.overlayTitle')?.textContent?.trim() || ''
+            };
+        }
+
+        const row = element.closest('.galleryRow') || element;
+        const background = getComputedStyle(row).backgroundImage;
+        const inlineBackground = row.style.backgroundImage;
+        const src = cleanUrl(inlineBackground || background);
+
+        return {
+            src,
+            alt: row.querySelector('.overlayTitle')?.textContent?.trim() || '',
+            title: row.querySelector('.overlayTitle')?.textContent?.trim() || ''
+        };
+    }
+
+    function collectItems() {
+        items.length = 0;
+
+        document.querySelectorAll(selectors).forEach(root => {
+            root.querySelectorAll('.galleryRow, img').forEach(el => {
+                if (el.closest('.gallery-lightbox')) return;
+
+                const info = getImageInfo(el);
+                if (!info.src || info.src === 'none') return;
+
+                // Avoid adding the same visual twice when an image is nested in a card.
+                const alreadyTracked = items.some(item => item.element === el);
+                if (!alreadyTracked) {
+                    items.push({
+                        element: el,
+                        src: info.src,
+                        alt: info.alt,
+                        title: info.title
+                    });
+                }
+            });
+        });
+    }
+
+    function render(index) {
+        if (!items.length) return;
+
+        currentIndex = (index + items.length) % items.length;
+        const item = items[currentIndex];
+
+        imageEl.classList.remove('is-changing');
+        imageEl.src = item.src;
+        imageEl.alt = item.alt || item.title || 'Artwork';
+
+        captionEl.textContent = item.title || item.alt || '';
+        counterEl.textContent = `${currentIndex + 1} / ${items.length}`;
+
+        // Hide arrows when there is only one image.
+        const single = items.length <= 1;
+        lightbox.querySelector('.gallery-lightbox__prev').hidden = single;
+        lightbox.querySelector('.gallery-lightbox__next').hidden = single;
+    }
+
+    function open(index) {
+        collectItems();
+        if (!items.length) return;
+
+        render(index);
+
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('gallery-lightbox-open');
+    }
+
+    function close() {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('gallery-lightbox-open');
+    }
+
+    function next() {
+        render(currentIndex + 1);
+    }
+
+    function previous() {
+        render(currentIndex - 1);
+    }
+
+    document.addEventListener('click', event => {
+        const target = event.target.closest(
+            '#imagePageOriginalCharacter .galleryRow,' +
+            '#imagePageOriginalCharacter img,' +
+            '#imagePageReDrawAnime .galleryRow,' +
+            '#imagePageReDrawAnime img,' +
+            '#imagePageBudgeHuntDeviantArt .galleryRow,' +
+            '#imagePageBudgeHuntDeviantArt img,' +
+            '#imagePageBudgeDreamUp .galleryRow,' +
+            '#imagePageBudgeDreamUp img,' +
+            '#imagePageMizugiParty .galleryRow,' +
+            '#imagePageMizugiParty img'
+        );
+
+        if (!target) return;
+
+        // Don't hijack clicks on links/buttons embedded inside a card.
+        if (event.target.closest('a, button')) return;
+
+        collectItems();
+        const index = items.findIndex(item => item.element === target);
+
+        // For an image nested inside .galleryRow, prefer the parent card.
+        const fallbackIndex = index >= 0
+            ? index
+            : items.findIndex(item => item.element === target.closest('.galleryRow'));
+
+        open(fallbackIndex >= 0 ? fallbackIndex : 0);
+    });
+
+    lightbox.addEventListener('click', event => {
+        if (event.target.closest('[data-lightbox-close]')) close();
+    });
+
+    lightbox.querySelector('.gallery-lightbox__next')
+        .addEventListener('click', next);
+
+    lightbox.querySelector('.gallery-lightbox__prev')
+        .addEventListener('click', previous);
+
+    document.addEventListener('keydown', event => {
+        if (!lightbox.classList.contains('is-open')) return;
+
+        if (event.key === 'Escape') close();
+        if (event.key === 'ArrowRight') next();
+        if (event.key === 'ArrowLeft') previous();
+    });
+
+    // Touch swipe support.
+    let touchStartX = 0;
+
+    lightbox.addEventListener('touchstart', event => {
+        touchStartX = event.changedTouches[0].screenX;
+    }, { passive: true });
+
+    lightbox.addEventListener('touchend', event => {
+        const deltaX = event.changedTouches[0].screenX - touchStartX;
+
+        if (Math.abs(deltaX) < 45) return;
+
+        if (deltaX < 0) next();
+        else previous();
+    }, { passive: true });
+
+    // Your data.js appears to populate the gallery dynamically.
+    // Re-collect after DOM changes so the lightbox sees new artwork.
+    const observer = new MutationObserver(() => {
+        if (!lightbox.classList.contains('is-open')) collectItems();
+    });
+
+    document.querySelectorAll(selectors).forEach(root => {
+        observer.observe(root, { childList: true, subtree: true });
+    });
+
+    // Initial collection.
+    collectItems();
+})();
+
     </script>
 </body>
 
