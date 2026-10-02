@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="./assets/css/costume.css">
 <link rel="stylesheet" href="./assets/css/footer.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"May Suichika","alternateName":"Satsuki Ichika","url":"https://miichika.github.io/","jobTitle":"Digital Artist","sameAs":["https://www.instagram.com/may_suichika/","https://www.deviantart.com/miichika","https://www.pixiv.net/en/users/109897327","https://www.youtube.com/@satsuki.ichika","https://www.tiktok.com/@satsuki.ichika","https://jp.pinterest.com/satsuki_ichika/"]}
+{"@context":"https://schema.org","@type":"Person","name":"May Suichika","alternateName":"Satsuki Ichika","url":"https://miichika.github.io/","jobTitle":"Digital Artist","sameAs":["https://www.instagram.com/satsuki_ichika/","https://www.deviantart.com/miichika","https://www.pixiv.net/en/users/109897327","https://www.youtube.com/@satsuki.ichika","https://www.tiktok.com/@satsuki.ichika","https://jp.pinterest.com/satsuki_ichika/"]}
 </script>
 </head>
 <body id="home">
@@ -92,7 +92,16 @@
     <p>What if witches still exist, quietly blending into modern life? Maybe they work ordinary jobs, pay ordinary bills, and keep extraordinary secrets.</p>
     <p class="accent-line">Wouldn’t that be a lovely story?</p>
   </div>
-  <div class="feature-frame" id="original-feature" aria-label="Featured original character artwork"></div>
+  <div class="feature-frame" id="original-feature" aria-label="Featured original character artwork">
+    <div class="original-slider-image" id="original-slider-image" aria-hidden="true"></div>
+    <div class="original-slider-controls" aria-label="Original character gallery slider controls">
+      <div class="original-slider-dots" id="original-slider-dots"></div>
+      <div class="original-slider-nav">
+        <button class="original-slider-btn" type="button" id="original-slider-prev" aria-label="Previous original artwork"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="original-slider-btn" type="button" id="original-slider-next" aria-label="Next original artwork"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="section-wrap section-block" id="redraw" aria-labelledby="redraw-title">
@@ -101,16 +110,19 @@
 </section>
 
 <section class="section-wrap section-block" id="mizugi" aria-labelledby="gallery-title">
-  <div class="section-heading"><div><p class="eyebrow">03 · SELECTED WORKS</p><h2 id="gallery-title">Mizugi Party & other illustrations.</h2></div><p>Browse the archive, open an artwork for a larger view, and follow the links to its published platforms.</p></div>
-  <div class="filter-bar" aria-label="Gallery filters">
+  <div class="section-heading"><div><p class="eyebrow">03 · SELECTED WORKS</p><h2 id="gallery-title">Latest works from the archive.</h2></div><p>Explore the latest 10 artworks, or narrow the preview by category and tag. The full archive is available in the gallery.</p></div>
+  <div class="filter-bar" aria-label="Selected works filters">
     <button class="filter-button active" type="button" data-filter="all">All</button>
-    <button class="filter-button" type="button" data-filter="original">Original</button>
-    <button class="filter-button" type="button" data-filter="redraw">Anime / Game</button>
-    <button class="filter-button" type="button" data-filter="mizugi">Mizugi</button>
+    <button class="filter-button" type="button" data-filter="category:original">Original</button>
+    <button class="filter-button" type="button" data-filter="category:fanart">Fan Art</button>
+    <button class="filter-button" type="button" data-filter="tag:anime">Anime</button>
+    <button class="filter-button" type="button" data-filter="tag:fgo">FGO</button>
+    <button class="filter-button" type="button" data-filter="tag:flavor">Flavor</button>
     <span class="gallery-count" id="gallery-count"></span>
   </div>
   <div class="gallery-grid" id="gallery-grid"></div>
   <p id="empty-state" class="empty-state" hidden>No artwork matches your search.</p>
+  <div class="gallery-more"><a class="button button-primary" href="./gallery.html">View full gallery <i class="fa-solid fa-arrow-right"></i></a></div>
 </section>
 
 <section class="about-band section-wrap" id="about" aria-labelledby="about-title">
@@ -120,7 +132,7 @@
     <p>I’m an amateur digital artist making original characters, illustrations, anime and game fan art, and sometimes stories. Redrawing and tracing have been part of my practice while I learn, experiment, and gradually develop a personal visual language.</p>
     <p class="jp-motto">他の旗を立てる。🏁</p>
     <div class="social-inline">
-      <a href="https://www.instagram.com/may_suichika/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.instagram.com/satsuki_ichika/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://www.deviantart.com/miichika" target="_blank" rel="noopener noreferrer" aria-label="DeviantArt"><i class="fa-brands fa-deviantart"></i></a>
       <a href="https://www.pixiv.net/en/users/109897327" target="_blank" rel="noopener noreferrer" aria-label="Pixiv"><i class="fa-brands fa-pixiv"></i></a>
       <a href="https://jp.pinterest.com/satsuki_ichika/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
@@ -144,7 +156,7 @@
     <div class="copyright">© 2026 May Suichika. All Rights Reserved.</div>
     <div class="social-links">
       <a href="https://www.facebook.com/people/Satsuki-Ichika" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/may_suichika/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.instagram.com/satsuki_ichika/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://jp.pinterest.com/satsuki_ichika/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
       <a href="https://www.deviantart.com/miichika" target="_blank" rel="noopener noreferrer" aria-label="DeviantArt"><i class="fa-brands fa-deviantart"></i></a>
       <a href="https://www.pixiv.net/en/users/109897327" target="_blank" rel="noopener noreferrer" aria-label="Pixiv"><i class="fa-brands fa-pixiv"></i></a>
@@ -166,7 +178,71 @@
     <div class="modal-thumbs" id="modal-thumbs" aria-label="Artwork thumbnails"></div>
   </div>
 </div>
-<script src="./assets/data/data.js" defer></script>
+
+
+  <div
+    class="age-overlay"
+    id="ageOverlay"
+    role="presentation"
+    aria-hidden="true"
+  >
+
+    <div
+      class="age-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="ageTitle"
+      aria-describedby="ageDescription"
+    >
+
+      <div class="age-icon">
+        🔞
+      </div>
+
+      <h2 id="ageTitle">
+        Please confirm your age
+      </h2>
+
+      <p id="ageDescription">
+        This website may contain artwork intended
+        for visitors aged 21 and over.
+      </p>
+
+      <div class="age-countdown">
+        No selection?
+        Defaulting to G in
+        <strong id="ageTimer">5</strong>
+      </div>
+
+      <div class="age-actions">
+
+        <button
+          type="button"
+          class="age-btn age-btn-no"
+          id="ageNoButton"
+        >
+          Under 21
+        </button>
+
+        <button
+          type="button"
+          class="age-btn age-btn-yes"
+          id="ageYesButton"
+        >
+          I'm 21+
+        </button>
+
+      </div>
+
+      <p class="age-note">
+        Your selection is stored locally in your browser.
+        No age information is sent to the server.
+      </p>
+
+    </div>
+
+  </div>
+
 <script src="./assets/js/app.js" defer></script>
 </body>
 </html>
