@@ -1,6 +1,7 @@
 [
   {
     "id": "1790812800",
+    "slug": "Pumpkin",
     "author": "May Suichika",
     "publish_date": "2026-10-01",
     "rate": "G",
@@ -62,6 +63,7 @@
   },
   {
     "id": "1790640000",
+    "slug": "Icedcoffee",
     "author": "May Suichika",
     "publish_date": "2026-09-29",
     "rate": "G",
@@ -103,10 +105,11 @@
   },
   {
     "id": "1789862400",
+    "slug": "Queso_and_Cheesecake",
     "author": "May Suichika",
     "publish_date": "2026-09-20",
     "rate": "G",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "original",
     "image": [
       "./assets/img/my_flavour/mfa_005_-_queso_cheesecake.png",
@@ -150,6 +153,7 @@
   },
   {
     "id": "1788566400",
+    "slug": "Hamster",
     "author": "May Suichika",
     "publish_date": "2026-09-05",
     "rate": "G",
@@ -183,6 +187,7 @@
   },
   {
     "id": "1779494400",
+    "slug": "Cute_Bee",
     "author": "May Suichika",
     "publish_date": "2026-05-23",
     "rate": "G",
@@ -226,10 +231,11 @@
   },
   {
     "id": "1778457600",
+    "slug": "Azrika_Swan_-_MAI_Project:_First_Step",
     "author": "May Suichika",
     "publish_date": "2026-05-11",
     "rate": "G",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "music",
     "image": [
       "./assets/img/MAI_Projects/single_art/MAIP_SA_001_-_azrika_swan.png",
@@ -246,14 +252,26 @@
     ],
     "published_link": [
       {
+        "name": "Pinterest",
+        "url": "https://jp.pinterest.com/pin/981995893784263096/"
+      },
+      {
         "name": "Deviantart",
         "url": "https:\\/\\/www.deviantart.com\\/miichika\\/art\\/Azrika-Swan---MAI-Project%3A-First-Step-1331512946"
+      },
+      {
+        "name": "Pixiv",
+        "url": "https://www.pixiv.net/en/artworks/144958641"
+      },
+      {
+        "name": "Soundcloud",
+        "url": "https://soundcloud.com/satsuki-ichika/sets/first-step"
       }
     ],
     "detail": {
       "en": {
         "title": "Azrika Swan - MAI Project: First Step",
-        "describe": "",
+        "describe": "<p>This is one way we represent our feelings in the form of artwork. <br><br>Welcome to MAI Project.<br>So, this is our the product of our first collaborative project in representing our feelings when you crafted our masterpiece.<br><br>Track:<br>01. First_Step_rv4<br>02. Feeling_Relaxed<br>03. Wake_Up<br><br> <br><iframe width='100%' height='450' scrolling='no' frameborder='no' allow='autoplay; encrypted-media' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2235868754&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe><div style='font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;'><a href='https://soundcloud.com/satsuki-ichika' title='May Suichika' target='_blank' style='color: #cccccc; text-decoration: none;'>May Suichika</a> · <a href='https://soundcloud.com/satsuki-ichika/sets/first-step' title='First Step' target='_blank' style='color: #cccccc; text-decoration: none;'>First Step</a></div><br><br> <br>Thanks for Contribution<br><br>Original Character [Azrika Swan - Roblox Avatar] by Kariya Ryuuichi.<br>Support Designer by May Suichika<br>Music Composer by alcorerythem.<br>Published by Satsuki Ichika <a href='https://soundcloud.com/satsuki-ichika'>Soundcloud</a></p>",
         "keywords": [
           "Azrika",
           "Swan",
@@ -272,6 +290,7 @@
   },
   {
     "id": "1772150400",
+    "slug": "Flower_Field",
     "author": "May Suichika",
     "publish_date": "2026-02-27",
     "rate": "G",
@@ -319,6 +338,7 @@
   },
   {
     "id": "1771977600",
+    "slug": "May_Suichika_/_MAI_-_Chibi_Character",
     "author": "May Suichika",
     "publish_date": "2026-02-25",
     "rate": "G",
@@ -360,7 +380,7 @@
     "detail": {
       "en": {
         "title": "May Suichika / MAI - Chibi Character",
-        "describe": "",
+        "describe": "<p>I actually forgot about this one! This is some of my old art where I tried to depict myself as an ordinary person in a digital chibi style. <br><br>Yeah, this is me (May Suichika / MAI)—as a human being in digital chibi lineart form.<br><br>Easy way to drawing a basic chibi character, and It's done by using Inkscape. I've embedded an anomaly in this video. Prove it, can you find it out?<br>Perhaps, Next, I'll use this is a basic design of image as material to animate it.</p>",
         "keywords": [
           "May",
           "Suichika",
@@ -378,6 +398,7 @@
   },
   {
     "id": "1771632000",
+    "slug": "Kuma_Choco_-_Hot_Chocolate_Drink",
     "author": "May Suichika",
     "publish_date": "2026-02-21",
     "rate": "G",
@@ -426,16 +447,17 @@
   },
   {
     "id": "1771631999",
+    "slug": "Hippolyta_-_Fate/Strange_Fake",
     "author": "May Suichika",
     "publish_date": "2026-02-21",
     "rate": "G",
     "type": "single",
     "category": "fanart",
     "image": "./assets/img/fgo/fafgo_006_-_hippolyta_fate_strange_fake.jpg",
-    "alt": "Hippolyta - Fate\\/Strange Fake",
+    "alt": "Hippolyta - Fate/Strange Fake",
     "tags": [
       "Hippolyta",
-      "Fate\\/Strange Fake",
+      "Fate/Strange Fake",
       "fate series",
       "Fgo",
       "rider"
@@ -464,7 +486,7 @@
     ],
     "detail": {
       "en": {
-        "title": "Hippolyta - Fate\\/Strange Fake",
+        "title": "Hippolyta - Fate/Strange Fake",
         "describe": "<p>Based of the premise the holy grail war on this Fate Series quietly wired. <br><br>As far as I try to understand.<br><br>There is some extra class servant summoned. Besides that, each servants with the seven basic (standard) servant classes, they are has unique characteristics kind of abilities that are not linear with their class.<br><br>So, I decide to draw Rider class servant who using archer weapon???<br><br>Hippolyta the queen of the Amazons with her horse Kalion.<br><br>Rider Class servant on Anime TV Series Fate/strange Fake.</p>",
         "keywords": [
           "Hippolyta",
@@ -482,6 +504,7 @@
   },
   {
     "id": "1770681600",
+    "slug": "Choco_Cupcake",
     "author": "May Suichika",
     "publish_date": "2026-02-10",
     "rate": "G",
@@ -532,6 +555,7 @@
   },
   {
     "id": "1765411200",
+    "slug": "Snow_Man_-_Vanilla_Ice_Cream",
     "author": "May Suichika",
     "publish_date": "2025-12-11",
     "rate": "G",
@@ -559,7 +583,7 @@
     "detail": {
       "en": {
         "title": "Snow Man - Vanilla Ice Cream",
-        "describe": "",
+        "describe": "Snow Man Vanilla Ice Cream with Choco toping decoration. #animefoodDA25",
         "keywords": [
           "Snow",
           "Man",
@@ -577,6 +601,7 @@
   },
   {
     "id": "1760832000",
+    "slug": "Anya_Forger_-_Spy_X_Family",
     "author": "May Suichika",
     "publish_date": "2025-10-19",
     "rate": "G",
@@ -608,7 +633,7 @@
     "detail": {
       "en": {
         "title": "Anya Forger - Spy X Family",
-        "describe": "",
+        "describe": "<p>  So this is fan art of the main character of one of the most anticipated Anime TV Series of the season, Spy X Family. The 3rd season premiered in early October 2025. <br><br> <b>Anya Forger - Spy X Family.</b></p>",
         "keywords": [
           "Anya",
           "Forger",
@@ -625,10 +650,11 @@
   },
   {
     "id": "1760659200",
+    "slug": "Candy_-_Tropical_Bananas_Flavors",
     "author": "May Suichika",
     "publish_date": "2025-10-17",
     "rate": "G",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "original",
     "image": [
       "./assets/img/my_flavour/mfa_003_-_sweets_banana.png",
@@ -654,7 +680,7 @@
     "detail": {
       "en": {
         "title": "Candy - Tropical Bananas Flavors",
-        "describe": "",
+        "describe": "<p>I try to draw a candy or sweet with Tropical Bananas Flavors. <b>sweets</b></p>",
         "keywords": [
           "Candy",
           "Tropical",
@@ -671,10 +697,11 @@
   },
   {
     "id": "1760486400",
+    "slug": "Stiri_Smart_-_Let_This_Grieving_Soul_Retire",
     "author": "May Suichika",
     "publish_date": "2025-10-15",
     "rate": "G",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "mizugi",
     "image": [
       "./assets/img/fanart/nagekibourei/fangb_002_-_sitri_smart_swimsuit_-_let_this_grieving_soul_retire.png",
@@ -708,7 +735,7 @@
     "detail": {
       "en": {
         "title": "Stiri Smart - Let This Grieving Soul Retire",
-        "describe": "",
+        "describe": "<p>  I specially dedicated this fanart to celebrate the airing of the second season Anime TV Series Series Nageki no Bourei wa Intai shitai / Let This Grieving Soul Retire /  「嘆きの亡霊は引退したい」 . <br><br>It's fanart of the anime Sitri Smart  「シトリー・スマート」.  She's on vacation at the beach right now.</p>",
         "keywords": [
           "Stiri",
           "Smart",
@@ -728,6 +755,7 @@
   },
   {
     "id": "1760400000",
+    "slug": "Kaonashi_-_Spirited_Away",
     "author": "May Suichika",
     "publish_date": "2025-10-14",
     "rate": "G",
@@ -800,6 +828,7 @@
   },
   {
     "id": "1758758400",
+    "slug": "Kobeni",
     "author": "May Suichika",
     "publish_date": "2025-09-25",
     "rate": "G",
@@ -859,6 +888,7 @@
   },
   {
     "id": "1756252800",
+    "slug": "Makima_-_Chainsaw_Man",
     "author": "May Suichika",
     "publish_date": "2025-08-27",
     "rate": "AO",
@@ -901,7 +931,7 @@
     ],
     "detail": {
       "en": {
-        "title": "Makima",
+        "title": "Makima - Chainsaw Man",
         "describe": "<p>Anime Character from anime TV Chainsaw Man, MAKIMA. <br>Room Invitation from best girl. <br><br>\"I've been waiting for along time. So come in... I've warm hug for u.\"~ ____</p>",
         "keywords": [
           "Makima",
@@ -918,10 +948,11 @@
   },
   {
     "id": "1755993600",
+    "slug": "Ayase_Momo_-_DanDaDan",
     "author": "May Suichika",
     "publish_date": "2025-08-24",
     "rate": "G",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "fanart",
     "image": [
       "./assets/img/fanart/dandadan/fad3x_001_-_ayase_mono_0.png",
@@ -952,7 +983,7 @@
     "detail": {
       "en": {
         "title": "Ayase Momo - DanDaDan",
-        "describe": "",
+        "describe": "<p>Fanart ANime Character from ANime TV Dan Da Dan  「ダンダダン」 <br>Momo Ayase 「綾瀬桃」<br><br>Heroine & Best Girl</p>",
         "keywords": [
           "Ayase",
           "Momo",
@@ -968,6 +999,7 @@
   },
   {
     "id": "1755648000",
+    "slug": "Chika_-_Flower-Patterned_Kimono",
     "author": "May Suichika",
     "publish_date": "2025-08-20",
     "rate": "G",
@@ -1032,17 +1064,18 @@
   },
   {
     "id": "1755475200",
+    "slug": "Mordred_-_Fate/Grand_Order_(FGO)",
     "author": "May Suichika",
     "publish_date": "2025-08-18",
     "rate": "G",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "fanart",
     "image": [
       "./assets/img/fgo/fafgo_005_-_mordred_0.png",
       "./assets/img/fgo/fafgo_005_-_mordred_a.png",
       "./assets/img/fgo/fafgo_005_-_mordred_b.png"
     ],
-    "alt": "Mordred - Fate\\/Grand Order (FGO)",
+    "alt": "Mordred - Fate/Grand Order (FGO)",
     "tags": [
       "Mordred",
       "Fate",
@@ -1054,12 +1087,28 @@
       {
         "name": "Deviantart",
         "url": "https:\\/\\/www.deviantart.com\\/miichika\\/art\\/Mordred---Fate-Grand-Order-%28FGO%29-1231428406"
+      },
+      {
+        "name": "Pixiv",
+        "url": "https://www.pixiv.net/en/artworks/134098265"
+      },
+      {
+        "name": "Pinterest",
+        "url": "https://jp.pinterest.com/pin/981995893773938040/"
+      },
+      {
+        "name": "Youtube",
+        "url": "https://youtube.com/shorts/Yjla6-eb46U"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/p/DNi8GsbSUpP"
       }
     ],
     "detail": {
       "en": {
-        "title": "Mordred - Fate\\/Grand Order (FGO)",
-        "describe": "",
+        "title": "Mordred - Fate/Grand Order (FGO)",
+        "describe": "<p>Next Drawing Progress FanArt TV Anime Series Character & Game Character :<br><br>Mordred (Saber)<br>AKA: Knight of Treachery / 「叛逆の騎士」 Hangyaku no Kishi / The Knight of Londinium / Saber of Red<br><br>In Game Gacha RPG: Fate/Grand Order, Mordred is one of the 5-star saber class servants with an anti-army type of noble phantasm, and is quietly hard to summon.<br><br>Default Biography:<br>Mordred is a Knight of the Round Table and the legitimate child of King Arthur.<br>At the same time, the one who put an end to the legend-- at Camlann Hill, the Knight of Rebellion who slew King Arthur.<br><br>More details at the Anime TV Series: Fate/Apocrypha:<br>She can be successfully summoned by her master Shisigo Kairi 「獅子劫 界離」, as a necromancy using an ancient relic and catalytic bonding with his late daughter.<br>Mordred was summoned as a tomboy young girl. The most impressive of her is her armor, which is mechanical like a human-sized Gundam suit.<br><br>Be happy, because of on this occasion, I decided to draw Saber of Red set the hair still loose and with cute expression.</p>",
         "keywords": [
           "Mordred",
           "Fate",
@@ -1077,10 +1126,11 @@
   },
   {
     "id": "1754956800",
+    "slug": "Strawberry_Shortcake",
     "author": "May Suichika",
     "publish_date": "2025-08-12",
     "rate": "G",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "original",
     "image": [
       "./assets/img/my_flavour/mfa_002_-_strawberry_shortcake_camera.png",
@@ -1108,7 +1158,7 @@
     "detail": {
       "en": {
         "title": "Strawberry Shortcake",
-        "describe": "",
+        "describe": "Strawberry Shortcake",
         "keywords": [
           "Strawberry",
           "Shortcake"
@@ -1123,6 +1173,7 @@
   },
   {
     "id": "1754784000",
+    "slug": "Chika_-_Patissier_Outfit",
     "author": "May Suichika",
     "publish_date": "2025-08-10",
     "rate": "G",
@@ -1192,6 +1243,7 @@
   },
   {
     "id": "1754783999",
+    "slug": "Chika_-_Drawing_at_Summer_Day",
     "author": "May Suichika",
     "publish_date": "2025-08-10",
     "rate": "G",
@@ -1261,10 +1313,11 @@
   },
   {
     "id": "1753574400",
+    "slug": "Poka_-_Wake_Up_in_The_Tent",
     "author": "May Suichika",
     "publish_date": "2025-07-27",
     "rate": "AO",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "original",
     "image": [
       "./assets/img/poca/ocpta_003_-_Poka_tent_a.jpg",
@@ -1272,11 +1325,7 @@
     ],
     "alt": "Poka adventurer waking up in a tent during a summer journey",
     "tags": [
-      "anime",
-      "fanart",
-      "animegirl",
       "originalcharacter",
-      "animefanart",
       "digitalart",
       "animedrawing",
       "sexy",
@@ -1343,6 +1392,7 @@
   },
   {
     "id": "1752796800",
+    "slug": "Queen_Mikoto_in_Azura's_White_Dress",
     "author": "May Suichika",
     "publish_date": "2025-07-18",
     "rate": "G",
@@ -1354,12 +1404,11 @@
     ],
     "alt": "Queen Mikoto in Azura's White Dress",
     "tags": [
-      "anime",
-      "animegirl",
       "dress",
       "animedrawing",
       "digitalart",
       "fanart",
+      "game",
       "digitalpainting",
       "digitaldrawing",
       "fireemblem",
@@ -1413,6 +1462,7 @@
   },
   {
     "id": "1745107200",
+    "slug": "Sitri_Smart_-_Nageki_no_Bourei_wa_Intai_shitai",
     "author": "May Suichika",
     "publish_date": "2025-04-20",
     "rate": "G",
@@ -1498,6 +1548,7 @@
   },
   {
     "id": "1744070400",
+    "slug": "Rita_Granville_-_Female_Knight",
     "author": "May Suichika",
     "publish_date": "2025-04-08",
     "rate": "AO",
@@ -1506,8 +1557,6 @@
     "image": "./assets/img/fanart/fgi_002_-_Female_Knight_Rita_Granville.png",
     "alt": "Fanart female knight character Rita Granville in sporty outfit",
     "tags": [
-      "anime",
-      "animegirl",
       "originalcharacter",
       "digitalart",
       "fanart",
@@ -1517,6 +1566,7 @@
       "blueeyedgirl",
       "gamecharacter",
       "redraw",
+      "game",
       "tanktop",
       "shorthairgirl",
       "whitehairgirl",
@@ -1571,10 +1621,11 @@
   },
   {
     "id": "1742601600",
+    "slug": "Poka_the_Adventurer",
     "author": "May Suichika",
     "publish_date": "2025-03-22",
     "rate": "AO",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "original",
     "image": [
       "./assets/img/poca/ocpta_002_-_poka_adventure_fr_a.png",
@@ -1586,21 +1637,37 @@
     "alt": "Poka the Adventurer",
     "tags": [
       "Poka",
-      "Adventurer"
+      "Adventurer",
+      "dark skins",
+      "beauty",
+      "cute",
+      "sexy"
     ],
     "published_link": [
       {
+        "name": "Pinterest",
+        "url": "https://jp.pinterest.com/pin/981995893772043268/"
+      },
+      {
         "name": "Deviantart",
         "url": "https:\\/\\/www.deviantart.com\\/miichika\\/art\\/Poka-the-Adventurer-1174019079"
+      },
+      {
+        "name": "Pixiv",
+        "url": "https://www.pixiv.net/en/artworks/132111419"
       }
     ],
     "detail": {
       "en": {
         "title": "Poka the Adventurer",
-        "describe": "",
+        "describe": "<p>My Story :<br>I'm Poka 「ポカ」 Poca, as you see I'm an adventurer.<br><br>This summer, I'm taking what's mine: a vacation to explore a semi-arid desert. Low rainfall? No problem – I'll be the vivid splash of color, the rainbow in that landscape. <br><br>My journey is all about the flow; no set destination, just me and the asphalt, and I'll be resting for a few days in any village or settlement that accepts me. This is going to be a seriously long haul. I live for challenges, and this is exactly how I own my identity as an adventurer. <br><br>So, wish me luck!</p>",
         "keywords": [
           "Poka",
-          "Adventurer"
+          "Adventurer",
+          "dark skins",
+          "beauty",
+          "cute",
+          "sexy"
         ]
       },
       "jp": {
@@ -1612,6 +1679,7 @@
   },
   {
     "id": "1741564800",
+    "slug": "Spring_Vibes_-_First_Love",
     "author": "May Suichika",
     "publish_date": "2025-03-10",
     "rate": "G",
@@ -1680,6 +1748,7 @@
   },
   {
     "id": "1731542400",
+    "slug": "Ais_Wallenstein",
     "author": "May Suichika",
     "publish_date": "2024-11-14",
     "rate": "G",
@@ -1726,7 +1795,7 @@
         "title": "Ais Wallenstein",
         "describe": "<p style='text-align:left;margin-inline-start:0px'>Ais Wallenstein, also known as the Sword Princess, is a First-Class Adventurer and a key member of the Loki Familia.<br><br></p><p style='text-align:left;margin-inline-start:0px'>Anime TV Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka? | Is It Wrong to Try to Pick Up Girls in a Dungeon? &lt;Danmachi&gt;</p>",
         "keywords": [
-          "Riveria",
+          "Ais Wallenstein",
           "DanMachi",
           "anime fan art"
         ]
@@ -1740,6 +1809,7 @@
   },
   {
     "id": "1731369600",
+    "slug": "Sedusa",
     "author": "May Suichika",
     "publish_date": "2024-11-12",
     "rate": "G",
@@ -1793,11 +1863,12 @@
   },
   {
     "id": "1730073600",
+    "slug": "Nekogata_Onibi_-_Cat-shaped_will-o'-the-wisp",
     "author": "May Suichika",
     "publish_date": "2024-10-28",
     "rate": "G",
-    "type": "single",
-    "category": "fanart",
+    "type": "sub-gallery",
+    "category": "original",
     "image": [
       "./assets/img/oc/oc_scag_001_nekogata_onibi.png",
       "./assets/img/oc/oc_scag_001_nekoonibi.png"
@@ -1832,7 +1903,7 @@
     "detail": {
       "en": {
         "title": "Nekogata Onibi  -  Cat-shaped will-o'-the-wisp",
-        "describe": "",
+        "describe": "<p>~... I offer your my magical energy <br>~Serve me as your master<br>~O darkness exterminator<br><br>and the circle was shining out a blue light.<br><br>猫型鬼火 &lt;Cat-shaped will-o'-the-wisp&gt;<br>'Demon Fire' with cat form.</p>",
         "keywords": [
           "Nekogata",
           "Onibi",
@@ -1851,6 +1922,7 @@
   },
   {
     "id": "1726963200",
+    "slug": "Peacock's_Head",
     "author": "May Suichika",
     "publish_date": "2024-09-22",
     "rate": "G",
@@ -1900,10 +1972,11 @@
   },
   {
     "id": "1726272000",
+    "slug": "Tomoe_-_Tsukimichi",
     "author": "May Suichika",
     "publish_date": "2024-09-14",
     "rate": "G",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "mizugi",
     "image": [
       "./assets/img/fanart/tsukimichi/fa_tmc_010_-_tomoe.jpg",
@@ -1953,6 +2026,7 @@
   },
   {
     "id": "1724284800",
+    "slug": "Selenicereus_Costaricensis_(Garden_Guardian)",
     "author": "May Suichika",
     "publish_date": "2024-08-22",
     "rate": "G",
@@ -2039,6 +2113,7 @@
   },
   {
     "id": "1723680000",
+    "slug": "Nyanko_Burger",
     "author": "May Suichika",
     "publish_date": "2024-08-15",
     "rate": "G",
@@ -2100,6 +2175,7 @@
   },
   {
     "id": "1723161600",
+    "slug": "Sumika_Fujimiya",
     "author": "May Suichika",
     "publish_date": "2024-08-09",
     "rate": "AO",
@@ -2177,6 +2253,7 @@
   },
   {
     "id": "1721433600",
+    "slug": "Marin_Kitagawa",
     "publish_date": "2024-07-20",
     "author": "May Suichika",
     "rate": "G",
@@ -2241,6 +2318,7 @@
   },
   {
     "id": "1721260800",
+    "slug": "Female_Sporty_Character",
     "author": "May Suichika",
     "publish_date": "2024-07-18",
     "rate": "AO",
@@ -2316,13 +2394,14 @@
   },
   {
     "id": "1710547200",
+    "slug": "Riveria_Ljos_Alf",
     "author": "May Suichika",
     "publish_date": "2024-03-16",
     "rate": "G",
     "type": "single",
     "category": "redraw",
     "image": "./assets/img/fanart/danmachi/fa_dmc_tc_001_riveria_alf.png",
-    "alt": "Riveria fan art by May Suichika",
+    "alt": "Fanart anime character Danmachi: Riveria fan art by May Suichika",
     "tags": [
       "Riveria",
       "DanMachi",
@@ -2374,6 +2453,7 @@
   },
   {
     "id": "1709510400",
+    "slug": "Zenin_Maki",
     "publish_date": "2024-03-04",
     "author": "May Suichika",
     "rate": "G",
@@ -2435,6 +2515,7 @@
   },
   {
     "id": "1709078400",
+    "slug": "ISTA_-_ELF_-_Researcher",
     "author": "May Suichika",
     "publish_date": "2024-02-28",
     "rate": "G",
@@ -2497,6 +2578,7 @@
   },
   {
     "id": "1700870400",
+    "slug": "Makima",
     "author": "May Suichika",
     "publish_date": "2023-11-25",
     "rate": "AO",
@@ -2555,6 +2637,7 @@
   },
   {
     "id": "1698364800",
+    "slug": "Frieren",
     "publish_date": "2023-10-27",
     "author": "May Suichika",
     "rate": "AO",
@@ -2613,6 +2696,7 @@
   },
   {
     "id": "1694476800",
+    "slug": "Shizuka_Mikazuki",
     "author": "May Suichika",
     "publish_date": "2023-09-12",
     "rate": "AO",
@@ -2670,16 +2754,17 @@
   },
   {
     "id": "1689897600",
+    "slug": "Jeanne_d'Arc_(Ruler)",
     "author": "May Suichika",
     "publish_date": "2023-07-21",
     "rate": "G",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "fanart",
     "image": [
       "./assets/img/fgo/fafgo_001_-_Jeanedarc_S_bg.png",
       "./assets/img/fgo/fafgo_001_-_Jeanedarc_ruler_bg.png"
     ],
-    "alt": "Jeanne d'Arc (Ruler)",
+    "alt": "Fanart of anime and game fate series: Jeanne d'Arc (Ruler)",
     "tags": [
       "Jeanne",
       "Arc",
@@ -2718,6 +2803,7 @@
   },
   {
     "id": "1689724800",
+    "slug": "Maya_Kumashiro",
     "author": "May Suichika",
     "publish_date": "2023-07-19",
     "rate": "G",
@@ -2770,6 +2856,367 @@
       "jp": {
         "title": "神代マヤ",
         "describe": "",
+        "keywords": []
+      }
+    }
+  },
+  {
+    "id": "9837782772",
+    "slug": "Florence_Nightingale_-_Fate_Grand_Order_(FGO)",
+    "author": "May Suichika",
+    "publish_date": "2024-09-07",
+    "rate": "G",
+    "type": "single",
+    "category": "fanart",
+    "image": [
+      "./assets/img/fgo/fafgo_002_-_florence_nightingale.png",
+      "./assets/img/fgo/fafgo_002_-_florence_nightingale_sq.png"
+    ],
+    "alt": "Florence Nightingale from Fate Grand Order",
+    "tags": [
+      "fategrandorder",
+      "militaryuniform",
+      "fanart",
+      "animegirl",
+      "anime",
+      "military",
+      "berserker",
+      "character",
+      "doctor",
+      "drawing",
+      "healer",
+      "pinkhairgirl",
+      "redraw",
+      "servant",
+      "vector",
+      "ahoge",
+      "fgo",
+      "fateseries",
+      "kuudere",
+      "fate_series",
+      "fate_grand_order",
+      "fategrandorderfanart",
+      "fateseriesfanart",
+      "fgofanart"
+    ],
+    "published_link": [
+      {
+        "name": "Pinterest",
+        "url": ""
+      },
+      {
+        "name": "Deviantart",
+        "url": "https://www.deviantart.com/miichika/art/Florence-Nightingale-Fate-Grand-Order-FGO-1095875863"
+      },
+      {
+        "name": "Pixiv",
+        "url": ""
+      }
+    ],
+    "detail": {
+      "en": {
+        "title": "Florence Nightingale - Fate Grand Order (FGO)",
+        "describe": "<p>Nightingale - Fate Grand Order<br>One of berserker class servants who have the medical skills, and can be enrolled as a support with her noble phantasm.</p>",
+        "keywords": [
+          "fategrandorder",
+          "militaryuniform",
+          "fanart",
+          "animegirl",
+          "anime",
+          "military",
+          "berserker",
+          "character",
+          "doctor",
+          "drawing",
+          "healer",
+          "pinkhairgirl",
+          "redraw",
+          "servant",
+          "vector",
+          "ahoge",
+          "fgo",
+          "fateseries",
+          "kuudere",
+          "fate_series",
+          "fate_grand_order",
+          "fategrandorderfanart",
+          "fateseriesfanart",
+          "fgofanart"
+        ]
+      },
+      "jp": {
+        "title": "",
+        "describe": "",
+        "keywords": []
+      }
+    }
+  },
+  {
+    "id": "09282789203",
+    "slug": "Ushiwakamaru_(Assassin)_-_Fate_Grand_Order_(FGO)",
+    "author": "May Suichika",
+    "publish_date": "2024-10-08",
+    "rate": "G",
+    "type": "sub-gallery",
+    "category": "fanart",
+    "image": [
+      "./assets/img/fgo/fafgo_003_-_ushiwakamaru_assassin.jpg",
+      "./assets/img/fgo/fafgo_003_-_ushiwakamaru_assassin_a.png"
+    ],
+    "style": "gallery",
+    "alt": "Ushiwakamaru (Assassin) - Fate Grand Order (FGO)",
+    "tags": [
+      "anime",
+      "fgo",
+      "animegirl",
+      "samuraigirl",
+      "swimsuit",
+      "twintails",
+      "servantgirl",
+      "fateseries",
+      "fate_series",
+      "fategrandorder",
+      "twintailsgirl",
+      "fate_grand_order",
+      "fgofanart",
+      "fate_grand_order_fanart"
+    ],
+    "published_link": [
+      {
+        "name": "Pinterest",
+        "url": "https://jp.pinterest.com/pin/981995893772505103"
+      },
+      {
+        "name": "Deviantart",
+        "url": "https://www.deviantart.com/miichika/art/Ushiwakamaru-Assassin-Fate-Grand-Order-FGO-1107354582"
+      },
+      {
+        "name": "Pixiv",
+        "url": "https://www.pixiv.net/en/artworks/123123482"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/p/DFlHAITSM9v/"
+      }
+    ],
+    "detail": {
+      "en": {
+        "title": "Ushiwakamaru (Assassin) - Fate Grand Order (FGO)",
+        "describe": "<p>Redraw Anime Character :</p><p>Summer version of Ushiwakamaru (牛若丸) as Assassin Class Servant (2nd Ascension Form) - Fate/Grand Order.</p><p>Summer. Swimsuit. Servant. Fate Series</p><p>「これが私の、全力の水遊びです！！！」 ~🎙</p>",
+        "keywords": [
+          "Ushiwakamaru",
+          "Ushiwakamaru Assassin",
+          "Fate Grand Order",
+          "Fate/Grand Order",
+          "FGO",
+          "anime",
+          "animegirl",
+          "samurai girl",
+          "swimsuit",
+          "twintails",
+          "servant",
+          "Fate Series",
+          "fanart",
+          "redraw"
+        ]
+      },
+      "jp": {
+        "title": "",
+        "describe": "",
+        "keywords": []
+      }
+    }
+  },
+  {
+    "id": "837882988371",
+    "slug": "Saint_Martha_(Ruler)_-_Fate/Grand_Order_(FGO)",
+    "author": "May Suichika",
+    "publish_date": "2025-07-20",
+    "rate": "G",
+    "type": "single",
+    "category": "fanart",
+    "image": "./assets/img/fgo/fafgo_004_-_saint_martha_ruler.jpg",
+    "style": "gallery",
+    "alt": "Saint Martha (Ruler) - Fate/Grand Order (FGO)",
+    "tags": [
+      "animegirl",
+      "beach",
+      "digitalart",
+      "fanart",
+      "fategrandorder",
+      "anime",
+      "videogamefanart",
+      "bikinibeach",
+      "bikinigirl",
+      "bikinimodel",
+      "bikiniswimsuit",
+      "swimsuit",
+      "saintmartha",
+      "fateseries",
+      "swimsuitbikini",
+      "fate_grand_order",
+      "fate_servant",
+      "fateseriesfanart",
+      "fate_grand_order_fanart",
+      "fgo"
+    ],
+    "published_link": [
+      {
+        "name": "Deviantart",
+        "url": "https://www.deviantart.com/miichika/art/Saint-Martha-Ruler-Fate-Grand-Order-FGO-1217744551"
+      },
+      {
+        "name": "Pixiv",
+        "url": "https://www.pixiv.net/en/artworks/132649329"
+      },
+      {
+        "name": "Pinterest",
+        "url": "https://jp.pinterest.com/pin/981995893772619792/"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/p/DMUC2phyn7r/"
+      }
+    ],
+    "detail": {
+      "en": {
+        "title": "Saint Martha (Ruler) - Fate/Grand Order (FGO)",
+        "describe": "<p><strong>Redraw Game Character :</strong><br>Saint Martha (Ruler)<br>Summer version of Martha (マルタ) as Ruler Class Servant (1 Stage) - Fate/Grand Order.</p><p>I think I found out one of her lines to be my favorite.<br>She is getting panicked and bewildered because she forgot that it is Valentine's Day.</p><p>In the conversation, there is an option to trigger her to say this line.</p><p>「姉さん言うな！」。<br>\"Don't call me Big Sis!\"</p><p>Archived from Event Log. Manannan's Souvenir Valentines: The Chocolate Tree and the Goddess's Choice / Chocolate / The Maiden Saint's Breather</p>",
+        "keywords": [
+          "Saint Martha",
+          "Martha",
+          "Ruler",
+          "Fate/Grand Order",
+          "FGO",
+          "animegirl",
+          "beach",
+          "digitalart",
+          "fanart",
+          "videogamefanart",
+          "bikinibeach",
+          "bikinigirl",
+          "bikinimodel",
+          "bikiniswimsuit",
+          "swimsuit",
+          "saintmartha",
+          "fateseries",
+          "swimsuitbikini",
+          "fate_grand_order",
+          "fate_servant",
+          "fateseriesfanart",
+          "fate_grand_order_fanart",
+          "marthafgo"
+        ]
+      },
+      "jp": {
+        "title": "",
+        "describe": "",
+        "keywords": []
+      }
+    }
+  },
+  {
+    "id": "32543324354354",
+    "slug": "MIO",
+    "author": "May Suichika",
+    "publish_date": "2024-07-31",
+    "rate": "G",
+    "type": "sub-gallery",
+    "category": "fanart",
+    "image": [
+      "./assets/img/fanart/tsukimichi/fa_tmc_008_-_mio.png",
+      "./assets/img/fanart/tsukimichi/fa_tmc_008_-_mio_t.png"
+    ],
+    "style": "gallery",
+    "alt": "Fanart anime character tsukimichi: MIO",
+    "tags": [
+      "animegirl",
+      "beach",
+      "digitalart",
+      "fanart",
+      "tsukimichi",
+      "anime",
+      "bikinibeach",
+      "bikinigirl",
+      "bikinimodel",
+      "bikiniswimsuit",
+      "swimsuit"
+    ],
+    "published_link": [
+      {
+        "name": "Pinterest",
+        "url": "https://jp.pinterest.com/pin/981995893757539084/"
+      },
+      {
+        "name": "Deviantart",
+        "url": "https://www.deviantart.com/miichika/art/MIO-Tsukimichi-1081227516"
+      },
+      {
+        "name": "Pixiv",
+        "url": "-"
+      }
+    ],
+    "detail": {
+      "en": {
+        "title": "MIO",
+        "describe": "<p style='text-align:left;margin-inline-start:0px'>Redraw Anime Character :<br><br>Mio / the 'Black Spider of Calamity' form Anime TV Tsuki ga Michibiku Isekai Douchuu 「月が導く異世界道中」 | Tsukimichi -Moonlit Fantasy-<br><br>A Servant. <br>Human form of  the black spider.</p><p style=''text-align:left;margin-inline-start:0px'>Summer. Swimsuit</p><p style='text-align:left;margin-inline-start:0px'>Everything she can eat.</p>",
+        "keywords": []
+      },
+      "jp": {
+        "title": "",
+        "describe": "",
+        "keywords": []
+      }
+    }
+  },
+  {
+    "id": "13",
+    "slug": "Urameshiya",
+    "author": "May Suichika",
+    "published_date": "2024-09-15",
+    "rate": "G",
+    "type": "single",
+    "category": "original",
+    "image": [
+      "./assets/img/deviantArt/oad_003_-_GigglingGhostsI.png",
+      "./assets/img/deviantArt/oad_003_-_GigglingGhostsII.png"
+    ],
+    "style": "gallery",
+    "alt": "Urameshiya",
+    "tags": [
+      "digitalart",
+      "spirit",
+      "halloween",
+      "spooky",
+      "ghost",
+      "character",
+      "fanart",
+      "horror",
+      "giggilingghosts"
+    ],
+    "published_link": [
+      {
+        "name": "Pinterest",
+        "url": "https://jp.pinterest.com/pin/urameshiya2024--981995893760290568/"
+      },
+      {
+        "name": "Deviantart",
+        "url": "https://www.deviantart.com/miichika/art/Urameshiya-1106474478"
+      },
+      {
+        "name": "Pixiv",
+        "url": "-"
+      }
+    ],
+    "detail": {
+      "en": {
+        "title": "Urameshiya",
+        "describe": "~うらめしや #GigglingGhosts",
+        "keywords": []
+      },
+      "jp": {
+        "title": "うらめしや",
+        "describe": "うらめしや #GigglingGhosts",
         "keywords": []
       }
     }
