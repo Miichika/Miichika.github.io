@@ -1,3 +1,4 @@
+
   const DATA_URL="./assets/data/gallery.json";
 
 /* ===== 01 · ORIGINAL CHARACTERS — SLIDER CONFIG =====
@@ -8,20 +9,35 @@ const ORIGINAL_SLIDER_CONFIG={
   // Put the exact `id` values from gallery.json here.
   // The slider follows this array order.
   ids:[
-    // "your-gallery-id-1",
-    // "your-gallery-id-2",
-    "1741564800",
     "1709078400",
+    "1741564800",    
     "1754784000",
     "1772150400",
-    "1755648000",
     "1754783999",
+    "1755648000"    
   ],
 
   autoplay:true,
   interval:5000,
   loop:true,
   showDots:true
+};
+
+/* ===== 02 · REDRAW / FAN ART — VERTICAL SLOT CONFIG =====
+   Use 4–8 exact `id` values from gallery.json.
+   The array order controls the slot order. */
+const REDRAW_SLOT_CONFIG={
+  enabled:true,
+  ids:[
+    "1771631999",
+    "9837782772",
+    "1710547200",
+    "1689897600",
+    // "1754783999"
+  ],
+  hoverSpeed:1200, // milliseconds
+  showTitle:true,
+  showDate:true
 };
 
 const state={data:[],filtered:[],filter:"all",query:"",modalItem:null,modalIndex:0,previousFocus:null};
@@ -117,9 +133,41 @@ bindCards(g)}function renderFeatured(){
   show(0,false);
   start();
 }
-function renderRedraw(){const g=$("#redraw-gallery");
-g.innerHTML=state.data.filter(i=>(isAdultApproved()||!i.__ao)&&cat(i)==="redraw").slice(0,6).map(card).join("");
-bindCards(g)}function modalRender(){const i=state.modalItem,im=imgs(i),src=im[state.modalIndex]||im[0],t=title(i);
+function formatPublishDate(value){
+  if(value==null||value==="")return "";
+  const d=value instanceof Date?value:new Date(value);
+  if(Number.isNaN(d.getTime()))return String(value);
+  return new Intl.DateTimeFormat(undefined,{year:"numeric",month:"short",day:"numeric"}).format(d);
+}
+function renderRedraw(){
+  const g=$("#redraw-gallery");
+  if(!g)return;
+  const cfg=REDRAW_SLOT_CONFIG||{};
+  if(!cfg.enabled){g.innerHTML="";return}
+  const ids=Array.isArray(cfg.ids)?cfg.ids.map(id=>String(id)).slice(0,8):[];
+  const byId=new Map(state.data.map(item=>[String(item.id),item]));
+  const items=ids.map(id=>byId.get(id)).filter(Boolean).filter(i=>isAdultApproved()||!i.__ao);
+  g.className="redraw-slots"+(items.length?"":" is-empty");
+  g.style.setProperty("--redraw-hover-speed",`${Math.max(0,Number(cfg.hoverSpeed)||450)}ms`);
+  if(items.length<4){g.innerHTML="";g.classList.add("is-empty");return}
+  g.innerHTML=items.map(i=>{
+    const t=title(i),date=formatPublishDate(i.date_publish);
+    return `<article class="redraw-slot" data-id="${esc(i.id)}" tabindex="0" aria-label="Open ${esc(t)}">
+      <div class="redraw-slot-image" style="background-image:url('${esc(cover(i))}');${esc(i.style?.img||"")}" aria-hidden="true"></div>
+      <div class="redraw-slot-content">
+        ${cfg.showTitle!==false?`<h3 class="redraw-slot-title">${esc(t)}</h3>`:""}
+        ${cfg.showDate!==false&&date?`<p class="redraw-slot-date">${esc(date)}</p>`:""}
+      </div>
+      <button class="redraw-slot-button" type="button" aria-label="Open ${esc(t)}"></button>
+    </article>`;
+  }).join("");
+  $$(`.redraw-slot`,g).forEach(c=>{
+    const open=()=>openModal(c.dataset.id);
+    c.addEventListener("click",e=>{if(!e.target.closest("button"))open()});
+    c.querySelector("button")?.addEventListener("click",open);
+    c.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open()}});
+  });
+}function modalRender(){const i=state.modalItem,im=imgs(i),src=im[state.modalIndex]||im[0],t=title(i);
 $("#modal-image").src=src;
 $("#modal-image").alt=i.alt||`${t} — digital artwork by May Suichika`,$("#modal-title").textContent=t,$("#modal-type").textContent=`${cat(i)} · ${i.author||"May Suichika"}`,$("#modal-description").innerHTML=desc(i);
 const links=(i.published_link||[]).filter(x=>x.url&&x.url!=="-");
@@ -185,3 +233,4 @@ $("#footer-artwork-count").textContent=String(state.data.filter(i=>isAdultApprov
   showAgeGate()}catch(e){console.error(e);
 $("#gallery-grid").innerHTML='<div class="empty-state" style="grid-column:1/-1"><strong>Gallery data could not be loaded.</strong><p>Check assets/data/gallery.json.</p></div>'}}setup();
 init();
+
