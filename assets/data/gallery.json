@@ -10,17 +10,15 @@
     "image": "./assets/img/deviantArt/oad_006_-_Pumpkin.png",
     "alt": "Pumpkin Halloween illustration",
     "tags": [
-      "pokemon",
+      "halloween",
       "ghost",
       "spooky",
-      "halloween",
-      "digitalart",
-      "nintendo",
+      "digital drawing",
+      "digital art",
       "illustrator",
       "sticker",
-      "digitalpainting",
-      "inktober",
-      "pumpkinpatch"
+      "cute things",      
+      "my beast"
     ],
     "published_link": [
       {
@@ -41,17 +39,15 @@
         "title": "Pumpkin",
         "describe": "<p>Pumpkin. Happy Halloween!!!!</p>",
         "keywords": [
-          "pokemon",
+          "halloween",
           "ghost",
           "spooky",
-          "halloween",
-          "digitalart",
-          "nintendo",
+          "digital drawing",
+          "digital art",
           "illustrator",
           "sticker",
-          "digitalpainting",
-          "inktober",
-          "pumpkinpatch"
+          "cute things",      
+          "my beasts"
         ]
       },
       "jp": {
@@ -72,7 +68,14 @@
     "image": "./assets/img/my_flavour/mfa_006_-_ice_coffee.png",
     "alt": "Icedcoffee",
     "tags": [
-      "Icedcoffee"
+      "digital drawing",
+      "digital art",
+      "illustrator",
+      "coffee",
+      "ice",
+      "flavor",
+      "drink",
+      "my flavors"
     ],
     "published_link": [
       {
@@ -91,9 +94,16 @@
     "detail": {
       "en": {
         "title": "Icedcoffee",
-        "describe": "",
+        "describe": "<p>It's just regular iced coffee, but I think I poured in too much milk on it.</p>",
         "keywords": [
-          "Icedcoffee"
+          "digital drawing",
+          "digital art",
+          "illustrator",
+          "coffee",
+          "ice",
+          "flavor",
+          "drink",
+          "my flavors"
         ]
       },
       "jp": {
@@ -119,12 +129,19 @@
     "alt": "Queso and Cheesecake",
     "tags": [
       "Queso",
-      "Cheesecake"
+      "Cheese",
+      "cake",
+      "digital drawing",
+      "digital art",
+      "illustrator",
+      "flavor",
+      "food",
+      "my flavors"
     ],
     "published_link": [
       {
         "name": "Pinterest",
-        "url": ""
+        "url": "https://jp.pinterest.com/pin/981995893788362621/"
       },
       {
         "name": "Deviantart",
@@ -138,10 +155,17 @@
     "detail": {
       "en": {
         "title": "Queso and Cheesecake",
-        "describe": "",
+        "describe": "<p>I don't really know what this actually is and have never seen it in person—let alone in my own country; I'm just trying to draw it based on the daily challenge.<br><br>However, I hope to taste it someday. Because As far as I have research, it tastes delicious, savory, and flavorful.<br><br>Queso.</p>",
         "keywords": [
           "Queso",
-          "Cheesecake"
+          "Cheese",
+          "cake",
+          "digital drawing",
+          "digital art",
+          "illustrator",
+          "flavor",
+          "food",
+          "my flavors"
         ]
       },
       "jp": {
@@ -162,12 +186,27 @@
     "image": "./assets/img/deviantArt/oad_005_-_Hamster.png",
     "alt": "Hamster",
     "tags": [
-      "Hamster"
+      "Hamster",
+      "cute",
+      "kawaii",
+      "digital drawing",
+      "digital art",
+      "illustrator",
+      "cute things",      
+      "my beasts"
     ],
     "published_link": [
       {
+        "name": "Pinterest",
+        "url": "https://jp.pinterest.com/pin/981995893788106320/"
+      },
+      {
         "name": "Deviantart",
         "url": "https:\\/\\/www.deviantart.com\\/miichika\\/art\\/Hamster-1377201642"
+      },
+      {
+        "name": "Pixiv",
+        "url": "https://www.pixiv.net/en/artworks/149865987"
       }
     ],
     "detail": {
@@ -175,7 +214,14 @@
         "title": "Hamster",
         "describe": "",
         "keywords": [
-          "Hamster"
+          "Hamster",
+          "cute",
+          "kawaii",
+          "digital drawing",
+          "digital art",
+          "illustrator",
+          "cute things",      
+          "my beasts"
         ]
       },
       "jp": {
@@ -196,8 +242,14 @@
     "image": "./assets/img/oc/oc_rdc_002_-_cutebee_with_honney.png",
     "alt": "Cute Bee",
     "tags": [
-      "Cute",
-      "Bee"
+      "bee",
+      "cute",
+      "kawaii",
+      "digital drawing",
+      "digital art",
+      "illustrator",
+      "cute things",      
+      "my beasts"
     ],
     "published_link": [
       {
@@ -216,10 +268,16 @@
     "detail": {
       "en": {
         "title": "Cute Bee",
-        "describe": "",
+        "describe": "<p>Just a cute bee flies delivering a jar of honey.</p>",
         "keywords": [
-          "Cute",
-          "Bee"
+          "bee",
+          "cute",
+          "kawaii",
+          "digital drawing",
+          "digital art",
+          "illustrator",
+          "cute things",      
+          "my beasts"
         ]
       },
       "jp": {
@@ -243,12 +301,15 @@
     ],
     "alt": "Azrika Swan - MAI Project: First Step",
     "tags": [
-      "Azrika",
-      "Swan",
-      "MAI",
-      "Project",
-      "First",
-      "Step"
+      "Azrika Swan",
+      "funart",
+      "MAI Project",
+      "Music",
+      "First Step",
+      "digital drawing",
+      "digital art",
+      "illustrator",
+      "collaboration project"
     ],
     "published_link": [
       {
@@ -347,13 +408,12 @@
     "image": "./assets/img/MAI_Projects/MAIP_001_-_may_suichika_chibi.jpg",
     "alt": "May Suichika \\/ MAI - Chibi Character",
     "tags": [
-      "May",
-      "Suichika",
-      "MAI",
-      "Chibi",
-      "Character",
+      "may suichika",
+      "digital drawing",
+      "chibi",
+      "character",
       "MAI Project",
-      "lain art"
+      "lineart"
     ],
     "published_link": [
       {
@@ -410,11 +470,15 @@
     ],
     "alt": "Kuma Choco - Hot Chocolate Drink",
     "tags": [
-      "Kuma",
-      "Choco",
-      "Hot",
-      "Chocolate",
-      "Drink"
+      "bear",
+      "hot choco",
+      "chocolate",
+      "drink",
+      "cute",
+      "kawaii",
+      "flavour",
+      "cute things",
+      "my flavors"
     ],
     "published_link": [
       {
@@ -429,13 +493,20 @@
     "detail": {
       "en": {
         "title": "Kuma Choco - Hot Chocolate Drink",
-        "describe": "",
+        "describe": "<p>Look, I took a page out of the barista playbook—turns out, there’s a whole craft behind making a drink look like more than just a liquid. It’s about the aesthetic precision. <br><br>I was originally going to execute a cat design, but I pivoted to a bear. It’s a solid, classic look. Also, full disclosure: this isn’t coffee. It’s a hot chocolate. Sometimes you just want something high-quality and straightforward without the caffeine.</p>",
         "keywords": [
-          "Kuma",
-          "Choco",
-          "Hot",
-          "Chocolate",
-          "Drink"
+          "bear",
+          "hot choco",
+          "chocolate",
+          "drink",
+          "cute",
+          "kawaii",
+          "cute things",
+          "digital drawing",
+          "digital art",
+          "illustrator",
+          "flavor",
+          "my flavors"
         ]
       },
       "jp": {
@@ -456,10 +527,13 @@
     "image": "./assets/img/fgo/fafgo_006_-_hippolyta_fate_strange_fake.jpg",
     "alt": "Hippolyta - Fate/Strange Fake",
     "tags": [
+      "digital drawing",
+      "funart",
       "Hippolyta",
       "Fate/Strange Fake",
       "fate series",
-      "Fgo",
+      "FGO",      
+      "servant",
       "rider"
     ],
     "published_link": [
@@ -474,6 +548,10 @@
       {
         "name": "Pixiv",
         "url": "https://www.pixiv.net/en/artworks/141482653"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/p/DVRRwZVgBfD/"
       },
       {
         "name": "Youtube",
@@ -516,12 +594,15 @@
     ],
     "alt": "Choco Cupcake",
     "tags": [
+      "digital drawing",
       "Choco",
       "Cupcake",
       "food",
       "cake",
       "chocolate",
-      "sweets"
+      "sweets",
+      "flavor",
+      "my flavors"
     ],
     "published_link": [
       {
@@ -540,7 +621,7 @@
     "detail": {
       "en": {
         "title": "Choco Cupcake",
-        "describe": "",
+        "describe": "召し上がれ。Special Choco Cupcake.",
         "keywords": [
           "Choco",
           "Cupcake"
@@ -564,11 +645,14 @@
     "image": "./assets/img/my_flavour/mfam_002_-_snowman_ice_cream_vanila_choco_toping.png",
     "alt": "Snow Man - Vanilla Ice Cream",
     "tags": [
-      "Snow",
-      "Man",
+      "chocolate",
+      "food",
+      "Snow Man",
       "Vanilla",
       "Ice",
-      "Cream"
+      "Ice Cream",
+      "flavor",
+      "my flavors"
     ],
     "published_link": [
       {
@@ -585,11 +669,14 @@
         "title": "Snow Man - Vanilla Ice Cream",
         "describe": "Snow Man Vanilla Ice Cream with Choco toping decoration. #animefoodDA25",
         "keywords": [
-          "Snow",
-          "Man",
+          "chocolate",
+          "food",
+          "Snow Man",
           "Vanilla",
           "Ice",
-          "Cream"
+          "Ice Cream",
+          "flavor",
+          "my flavors"
         ]
       },
       "jp": {
@@ -633,7 +720,7 @@
     "detail": {
       "en": {
         "title": "Anya Forger - Spy X Family",
-        "describe": "<p>  So this is fan art of the main character of one of the most anticipated Anime TV Series of the season, Spy X Family. The 3rd season premiered in early October 2025. <br><br> <b>Anya Forger - Spy X Family.</b></p>",
+        "describe": "<p>  So this is fanart of the main character of one of the most anticipated Anime TV Series of the season, Spy X Family. The 3rd season premiered in early October 2025. <br><br> <b>Anya Forger - Spy X Family.</b></p>",
         "keywords": [
           "Anya",
           "Forger",
@@ -663,9 +750,10 @@
     "alt": "Candy - Tropical Bananas Flavors",
     "tags": [
       "Candy",
-      "Tropical",
-      "Bananas",
-      "Flavors"
+      "sweets",
+      "Tropical Bananas",
+      "flavor",
+      "my flavor"
     ],
     "published_link": [
       {
@@ -683,9 +771,10 @@
         "describe": "<p>I try to draw a candy or sweet with Tropical Bananas Flavors. <b>sweets</b></p>",
         "keywords": [
           "Candy",
-          "Tropical",
-          "Bananas",
-          "Flavors"
+          "sweets",
+          "Tropical Bananas",
+          "flavor",
+          "my flavor"
         ]
       },
       "jp": {
@@ -697,7 +786,7 @@
   },
   {
     "id": "1760486400",
-    "slug": "Stiri_Smart_-_Let_This_Grieving_Soul_Retire",
+    "slug": "Sitri_Smart_-_Let_This_Grieving_Soul_Retire",
     "author": "May Suichika",
     "publish_date": "2025-10-15",
     "rate": "G",
@@ -708,15 +797,23 @@
       "./assets/img/fanart/nagekibourei/fangb_002_-_sitri_smart_swimsuit_-_let_this_grieving_soul_retire_r.png",
       "./assets/img/fanart/nagekibourei/fangb_002_-_sitri_smart_swimsuit_-_let_this_grieving_soul_retire_la.png"
     ],
-    "alt": "Stiri Smart - Let This Grieving Soul Retire",
+    "alt": "Sitri Smart - Let This Grieving Soul Retire",
     "tags": [
-      "Stiri",
-      "Smart",
-      "Let",
-      "This",
-      "Grieving",
-      "Soul",
-      "Retire"
+        "let this grieving soul retire", 
+        "sitri smart",       
+        "fanart",        
+        "render",
+        "anime drawing",
+        "anime fanart",
+        "beach",
+        "character drawing",
+        "digital art",
+        "digital drawing",
+        "pink hair girl",
+        "swimsuit",
+        "nageki no bourei wa intai shitai",        
+        "lineart"
+        
     ],
     "published_link": [
       {
@@ -734,16 +831,24 @@
     ],
     "detail": {
       "en": {
-        "title": "Stiri Smart - Let This Grieving Soul Retire",
+        "title": "Sitri Smart - Let This Grieving Soul Retire",
         "describe": "<p>  I specially dedicated this fanart to celebrate the airing of the second season Anime TV Series Series Nageki no Bourei wa Intai shitai / Let This Grieving Soul Retire /  「嘆きの亡霊は引退したい」 . <br><br>It's fanart of the anime Sitri Smart  「シトリー・スマート」.  She's on vacation at the beach right now.</p>",
         "keywords": [
-          "Stiri",
-          "Smart",
-          "Let",
-          "This",
-          "Grieving",
-          "Soul",
-          "Retire"
+          "anime",
+          "fanart",
+          "lineart",
+          "render",
+          "anime drawing",
+          "anime fanart",
+          "beach",
+          "character drawing",
+          "digital art",
+          "digital drawing",
+          "pink hair girl",
+          "swimsuit",
+          "nageki no bourei wa intai shitai",
+          "let this grieving soul retire",
+          "sitri smart"
         ]
       },
       "jp": {
@@ -766,23 +871,20 @@
       "./assets/img/fanart/spirited_away/fasaw_001_kaonashi_a.png",
       "./assets/img/fanart/spirited_away/fasaw_001_kaonashi_b.png"
     ],
-    "style": "gallery",
     "alt": "Kaonashi No-Face from Spirited Away",
     "tags": [
       "fanart",
+      "spirit",
+      "ghost",
       "movie",
-      "digitalart",
+      "digital art",
       "illustrator",
       "anime",
       "animefanart",
-      "dark",
-      "ghost",
+      "dark",      
       "halloween",
       "masked",
-      "specter",
-      "spirit",
-      "ghostsofgalleriespast",
-      "monsterfa25"
+      "specter"
     ],
     "published_link": [
       {
@@ -801,22 +903,20 @@
     "detail": {
       "en": {
         "title": "Kaonashi - Spirited Away",
-        "describe": "<p>This piece of fan art features the iconic \"Kaonashi\" (No-Face) character from Legendary Anime Movie Spirited Away. While I initially mistook him for a masked spirit, his name, Kaonashi, accurately translates to \"No-Face\" or \"Faceless.\" I first watched Spirited Away during my childhood; the movie follows a young girl who inadvertently crosses over into the spirit world, an occurrence known in Japanese folklore as \"Kamikakushi\".</p>",
+        "describe": "<p>This piece of fanart features the iconic \"Kaonashi\" (No-Face) character from Legendary Anime Movie Spirited Away. While I initially mistook him for a masked spirit, his name, Kaonashi, accurately translates to \"No-Face\" or \"Faceless.\" I first watched Spirited Away during my childhood; the movie follows a young girl who inadvertently crosses over into the spirit world, an occurrence known in Japanese folklore as \"Kamikakushi\".</p>",
         "keywords": [
           "fanart",
+          "spirit",
+          "ghost",
           "movie",
-          "digitalart",
+          "digital art",
           "illustrator",
           "anime",
           "animefanart",
-          "dark",
-          "ghost",
+          "dark",      
           "halloween",
           "masked",
-          "specter",
-          "spirit",
-          "ghostsofgalleriespast",
-          "monsterfa25"
+          "specter"
         ]
       },
       "jp": {
@@ -838,22 +938,13 @@
     "alt": "Redraw anart anime character Chainsaw Man : Kobeni Higashiyama",
     "tags": [
       "Kobeni Higashiyama",
-      "kobeni",
+      "fanart",
       "Chainsaw Man",
       "anime",
-      "fan art",
-      "digital art",
       "fanart",
+      "digital art",
       "redraw"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#C4B0FF;",
-      "slider": [
-        "width:min(70vw,520px);"
-      ],
-      "rails": []
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -873,10 +964,13 @@
         "title": "Kobeni",
         "describe": "<p>Fanart Anime Character from anime TV Chainsaw Man, <i>Kobeni Higashiyama</i>.<br><br>Back to school and she introduction her self to all students in her class after 3 years doesn't attend the class.</p>",
         "keywords": [
-          "Kobeni Higashiyama",
-          "kobeni",
+          "kobeni higashiyama",
+          "fanart",
           "Chainsaw Man",
-          "anime fan art"
+          "anime",
+          "fanart",
+          "digital art",
+          "redraw"
         ]
       },
       "jp": {
@@ -898,23 +992,15 @@
     "alt": "Redraw anart anime character Chainsaw Man : Makima",
     "tags": [
       "Makima",
-      "Chainsaw Man",
+      "Chainsaw Man",      
+      "fanart",
       "anime",
-      "fan art",
       "digital art",
       "fanart",
       "swimsuit",
       "redraw",
       "mizugi"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#C4B0FF;",
-      "slider": [
-        "width:min(70vw,520px);"
-      ],
-      "rails": []
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -936,7 +1022,7 @@
         "keywords": [
           "Makima",
           "Chainsaw Man",
-          "anime fan art"
+          "anime fanart"
         ]
       },
       "jp": {
@@ -1018,18 +1104,6 @@
       "hanabi",
       "fireworks"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#C4B0FF;",
-      "slider": [
-        "width:min(70vw,520px);",
-        "width:min(70vw,520px);"
-      ],
-      "rails": [
-        null,
-        ""
-      ]
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -1139,7 +1213,11 @@
     "alt": "Strawberry Shortcake",
     "tags": [
       "Strawberry",
-      "Shortcake"
+      "Shortcake",
+      "cake",
+      "food",
+      "flavor",
+      "my flavors"
     ],
     "published_link": [
       {
@@ -1161,7 +1239,11 @@
         "describe": "Strawberry Shortcake",
         "keywords": [
           "Strawberry",
-          "Shortcake"
+          "Shortcake",
+          "cake",
+          "food",
+          "flavor",
+          "my flavors"
         ]
       },
       "jp": {
@@ -1193,18 +1275,6 @@
       "fireworks",
       "summer"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#C4B0FF;",
-      "slider": [
-        "width:min(70vw,520px);",
-        "width:min(70vw,520px);"
-      ],
-      "rails": [
-        null,
-        ""
-      ]
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -1263,18 +1333,6 @@
       "summer dress",
       "elf"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#C4B0FF;",
-      "slider": [
-        "width:min(70vw,520px);",
-        "width:min(70vw,520px);"
-      ],
-      "rails": [
-        null,
-        ""
-      ]
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -1325,22 +1383,14 @@
     ],
     "alt": "Poka adventurer waking up in a tent during a summer journey",
     "tags": [
-      "originalcharacter",
-      "digitalart",
-      "animedrawing",
+      "original character",
+      "digital art",
       "sexy",
-      "femalecharacter",
-      "sexypose",
+      "pose",
       "underwear",
-      "sexybeautiful",
-      "underwearsexy",
-      "tanskinned",
-      "tanktopboobs",
-      "underwearexposure",
-      "tanskinnedgirl",
-      "tanktopsexy",
-      "tanskinbeauty",
-      "tanktopandunderwear"
+      "beautiful",
+      "tan skinned",
+      "digital drawing"
     ],
     "published_link": [
       {
@@ -1361,26 +1411,14 @@
         "title": "Poka - Wake Up in The Tent",
         "describe": "<p>I'm Poka / Poca 「ポカ」, as you see I'm an adventurer. My summer journey led me through the semi-arid desert, where I continued my steps until sunset. If I couldn't reach a village, abandoned building, or cave till dusk, I knew I'd have to pitch my tent to take a rest at night. At dawn, the sun's warm light gently woke me, and then I'm ready for continue my journey.</p><p>#Summer #Adventure #Journey</p>",
         "keywords": [
-          "anime",
-          "fanart",
-          "animegirl",
-          "originalcharacter",
-          "animefanart",
-          "digitalart",
-          "animedrawing",
+          "original character",
+          "digital art",
           "sexy",
-          "femalecharacter",
-          "sexypose",
+          "pose",
           "underwear",
-          "sexybeautiful",
-          "underwearsexy",
-          "tanskinned",
-          "tanktopboobs",
-          "underwearexposure",
-          "tanskinnedgirl",
-          "tanktopsexy",
-          "tanskinbeauty",
-          "tanktopandunderwear"
+          "beautiful",
+          "tan skinned",
+          "digital drawing"
         ]
       },
       "jp": {
@@ -1404,19 +1442,16 @@
     ],
     "alt": "Queen Mikoto in Azura's White Dress",
     "tags": [
-      "dress",
-      "animedrawing",
-      "digitalart",
-      "fanart",
-      "game",
-      "digitalpainting",
-      "digitaldrawing",
-      "fireemblem",
-      "fireemblemfanart",
-      "elderscrollsfanart",
-      "elderscrollsonline",
-      "fireemblemfates",
-      "queenmikoto"
+          "fire emblem",
+          "fire mblem fanart",
+          "elder scrolls fanart",
+          "queen mikoto",
+          "dress",
+          "game funart",
+          "digital art",
+          "fanart",
+          "digital drawing",
+          "commission"
     ],
     "published_link": [
       {
@@ -1437,20 +1472,15 @@
         "title": "Queen Mikoto in Azura's White Dress",
         "describe": "<p>Is this called stealing like an artist?</p><p>Take 2 references, then analyze, compare/combine, and merge them to make new works.</p><p>Reference :</p><p>Queen Mikoto from Fire Emblem Fates.</p><p>Azura's Outfit form Elder Scrolls Online.</p><p>It actually feels hard for me to identify and imagine the dress.</p><p>As far as I can do, I already give my best effort for it.<br>Thanks' for Idea and Request @Bryan98.<br><br>I hope you like it.</p>",
         "keywords": [
-          "anime",
-          "animegirl",
+          "fire emblem",
+          "fire mblem fanart",
+          "elder scrolls fanart",
+          "queen mikoto",
           "dress",
-          "animedrawing",
-          "digitalart",
+          "game funart",
+          "digital art",
           "fanart",
-          "digitalpainting",
-          "digitaldrawing",
-          "fireemblem",
-          "fireemblemfanart",
-          "elderscrollsfanart",
-          "elderscrollsonline",
-          "fireemblemfates",
-          "queenmikoto"
+          "digital drawing"
         ]
       },
       "jp": {
@@ -1465,37 +1495,31 @@
     "slug": "Sitri_Smart_-_Nageki_no_Bourei_wa_Intai_shitai",
     "author": "May Suichika",
     "publish_date": "2025-04-20",
-    "rate": "G",
+    "rate": "AO",
     "type": "sub-gallery",
     "category": "mizugi",
     "image": [
       "./assets/img/fanart/nagekibourei/fangb_001_-_sitri_smart.png",
       "./assets/img/fanart/nagekibourei/fangb_001_-_sitri_smart_t.png"
     ],
-    "style": "gallery",
     "alt": "Sitri Smart from Nageki no Bourei wa Intai shitai",
     "tags": [
-      "anime",
-      "animegirl",
-      "fanart",
-      "render",
-      "animedrawing",
-      "animefanart",
-      "beach",
-      "characterdrawing",
-      "digitalart",
-      "digitaldrawing",
-      "inkscape",
-      "pinkhairedgirl",
-      "pinkhairgirl",
-      "swimsuit",
-      "swimsuitbikini",
-      "2dartdigital",
-      "nageki_no_bourei_wa_intai_shitai",
-      "nagekinoboureiwaintaishitai",
-      "letthisgrievingsoulretire",
-      "sitri_smart",
-      "sitrismart"
+        "anime",
+        
+        "fanart",
+        "lineart",
+        "render",
+        "anime drawing",
+        "anime fanart",
+        "beach",
+        "character drawing",
+        "digital art",
+        "digital drawing",
+        "pink hair girl",
+        "swimsuit",
+        "nageki no bourei wa intai shitai",
+        "let this grieving soul retire",
+        "sitri smart"
     ],
     "published_link": [
       {
@@ -1517,26 +1541,20 @@
         "describe": "<p>Next, let's begin with drawing anime character.</p><p>Sitri Smart 「シトリー・スマート」 from Anime TV Series Nageki no Bourei wa Intai shitai / Let This Grieving Soul Retire / 嘆きの亡霊は引退したい</p><p>She is one of the pioneer six members of Grieving Souls and also known as the strongest command tower, the intellectual Alchemist.</p>",
         "keywords": [
           "anime",
-          "animegirl",
           "fanart",
+          "lineart",
           "render",
-          "animedrawing",
-          "animefanart",
+          "anime drawing",
+          "anime fanart",
           "beach",
-          "characterdrawing",
-          "digitalart",
-          "digitaldrawing",
-          "inkscape",
-          "pinkhairedgirl",
-          "pinkhairgirl",
+          "character drawing",
+          "digital art",
+          "digital drawing",
+          "pink hair girl",
           "swimsuit",
-          "swimsuitbikini",
-          "2dartdigital",
-          "nageki_no_bourei_wa_intai_shitai",
-          "nagekinoboureiwaintaishitai",
-          "letthisgrievingsoulretire",
-          "sitri_smart",
-          "sitrismart"
+          "nageki no bourei wa intai shitai",
+          "let this grieving soul retire",
+          "sitri smart"
         ]
       },
       "jp": {
@@ -1557,22 +1575,17 @@
     "image": "./assets/img/fanart/fgi_002_-_Female_Knight_Rita_Granville.png",
     "alt": "Fanart female knight character Rita Granville in sporty outfit",
     "tags": [
-      "originalcharacter",
-      "digitalart",
+      "digital art",
+      "digital drawing",
       "fanart",
-      "animedrawing",
-      "bigboobs",
-      "bigbreasts",
-      "blueeyedgirl",
-      "gamecharacter",
+      "sexy",
+      "pose",      
+      "big boobs",
+      "big breasts",
+      "blue eyed girl",
+      "game character",
       "redraw",
-      "game",
-      "tanktop",
-      "shorthairgirl",
-      "whitehairgirl",
-      "tanktopboobs",
-      "sportyoutfit",
-      "tanktopsexy"
+      "game funart"
     ],
     "published_link": [
       {
@@ -1593,23 +1606,17 @@
         "title": "Rita Granville - Female Knight",
         "describe": "<p>Fanart Random Character a Female Knight in Sport outfit Rita Granville</p>",
         "keywords": [
-          "anime",
-          "animegirl",
-          "originalcharacter",
-          "digitalart",
+          "digital art",
+          "digital drawing",
           "fanart",
-          "animedrawing",
-          "bigboobs",
-          "bigbreasts",
-          "blueeyedgirl",
-          "gamecharacter",
+          "sexy",
+          "pose",      
+          "big boobs",
+          "big breasts",
+          "blue eyed girl",
+          "game character",
           "redraw",
-          "tanktop",
-          "shorthairgirl",
-          "whitehairgirl",
-          "tanktopboobs",
-          "sportyoutfit",
-          "tanktopsexy"
+          "game funart"
         ]
       },
       "jp": {
@@ -1698,18 +1705,6 @@
       "glasses",
       "spring"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#C4B0FF;",
-      "slider": [
-        "width:min(70vw,520px);",
-        "width:min(70vw,520px);"
-      ],
-      "rails": [
-        null,
-        ""
-      ]
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -1733,10 +1728,12 @@
         "title": "Spring Vibes - First Love",
         "describe": "<p>\"Waiting for spring. <br>Spring is coming up,<br>the cherry blossoms will falling down.<br><br>I hope I can find out my First Love.\" ~Inui Iwashiki<br><br>Character details:<br>Name: Inui Iwashiki<br>Class: A - first year<br>Alignment: Good / ???<br><br>Describe:<br>Book Club Member and a volunteer as librarian.<br><br>Project Affiliated :<br>Enact as a NPC Character at Game VN: The Undercover Ruler.</p>",
         "keywords": [
-          "May Suichika",
-          "digital artist",
           "original character",
-          "illustration"
+          "digital art",
+          "artist portfolio",
+          "office lady",
+          "glasses",
+          "spring"
         ]
       },
       "jp": {
@@ -1758,24 +1755,15 @@
     "alt": "Fanart Anime Danmachi Character: Ais Wallenstein",
     "tags": [
       "Ais Wallenstein",
-      "Ais",
       "DanMachi",
       "anime",
-      "fan art",
+      "fanart",
       "digital art",
       "fanart",
       "swimsuit",
       "redraw",
       "mizugi"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#C4B0FF;",
-      "slider": [
-        "width:min(70vw,520px);"
-      ],
-      "rails": []
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -1797,7 +1785,13 @@
         "keywords": [
           "Ais Wallenstein",
           "DanMachi",
-          "anime fan art"
+          "anime",
+          "fanart",
+          "digital art",
+          "fanart",
+          "swimsuit",
+          "redraw",
+          "mizugi"
         ]
       },
       "jp": {
@@ -1819,12 +1813,12 @@
     "alt": "Sedusa",
     "tags": [
       "dress",
-      "digitalart",
+      "digital art",
       "fanart",
       "commission",
       "powerpuffgirls",
       "sedusa",
-      "drawingdigital"
+      "digital drawing"
     ],
     "published_link": [
       {
@@ -1846,12 +1840,12 @@
         "describe": "<p><strong>Sedusa</strong> from <strong>The Powerpuff Girls</strong>.</p><p>Requested by Anonymous.</p>",
         "keywords": [
           "dress",
-          "digitalart",
+          "digital art",
           "fanart",
           "commission",
           "powerpuffgirls",
           "sedusa",
-          "drawingdigital"
+          "digital drawing"
         ]
       },
       "jp": {
@@ -1931,11 +1925,12 @@
     "image": "./assets/img/deviantArt/oad_001_-_peacock_s_head.jpg",
     "alt": "Peacock's Head",
     "tags": [
-      "digitalpainting",
       "animal",
-      "digitalart",
+      "digital art",
+      "digital drawing",
       "bird",
-      "peacocktutorial"
+      "peacock",
+      "my beasts"
     ],
     "published_link": [
       {
@@ -1956,11 +1951,12 @@
         "title": "Peacock's Head",
         "describe": "<p>Peacock's Head September 2024</p><p>Chimera lizard &gt;&lt; Peacock</p><p>#peacocktutorial</p>",
         "keywords": [
-          "digitalpainting",
           "animal",
-          "digitalart",
+          "digital art",
+          "digital drawing",
           "bird",
-          "peacocktutorial"
+          "peacock",
+          "my beasts"
         ]
       },
       "jp": {
@@ -2014,7 +2010,14 @@
         "describe": "<p>Redraw Anime Character :<br><br>Tomoe / the 'Invincible Dragon' form Anime TV Tsuki ga Michibiku Isekai Douchuu 「月が導く異世界道中」 | Tsukimichi -Moonlit Fantasy- <br><br>A Servant. Heroine. <br>Human form of  the Invincible dragon. <br>Summer. Swimsuit <br><br>samurai enthusiasm,  Sengoku Jidai enthusiasm.</p>",
         "keywords": [
           "Tomoe",
-          "Tsukimichi"
+          "Tsukimichi",
+          "fanart",
+          "Tsukimichi -Moonlit Fantasy-",
+          "Tsuki ga Michibiku Isekai Douchuu",
+          "swimsuit",
+          "digital art",
+          "redraw",
+          "mizugi"
         ]
       },
       "jp": {
@@ -2038,28 +2041,21 @@
     ],
     "alt": "Selenicereus Costaricensis (Garden Guardian)",
     "tags": [
-      "digitalpainting",
-      "characterdesign",
       "cartoon",
       "plants",
       "fanart",
-      "digitalart",
+      "digital art",
       "chibi",
       "cute",
-      "cutekawaii",
+      "kawaii",
       "dragon",
-      "dragonfruit",
-      "fantasycharacter",
-      "fantasycreature",
+      "dragon fruit",
+      "fantasy",
+      "creature",
       "guardian",
       "magic",
-      "magician",
-      "monster",
-      "originalcharacter",
-      "scalie",
-      "chibicutekawaii",
-      "dragon_fruit",
-      "gardendragontutorial"
+      "original character",
+      "my beasts"
     ],
     "published_link": [
       {
@@ -2080,28 +2076,24 @@
         "title": "Selenicereus Costaricensis (Garden Guardian)",
         "describe": "<p>The Ancient Sage Dragon of Secret Garden Guardian.</p><p>#GardenDragonTutorial</p>",
         "keywords": [
-          "digitalpainting",
-          "characterdesign",
           "cartoon",
           "plants",
           "fanart",
-          "digitalart",
+          "digital art",
           "chibi",
           "cute",
-          "cutekawaii",
+          "kawaii",
           "dragon",
-          "dragonfruit",
-          "fantasycharacter",
-          "fantasycreature",
+          "dragon fruit",
+          "fantasy character",
+          "fantasy creature",
           "guardian",
           "magic",
           "magician",
           "monster",
-          "originalcharacter",
+          "original character",
           "scalie",
-          "chibicutekawaii",
-          "dragon_fruit",
-          "gardendragontutorial"
+          "my beasts"
         ]
       },
       "jp": {
@@ -2125,14 +2117,15 @@
       "cat",
       "chibi",
       "kitty",
-      "digitalart",
+      "digital art",
       "burger",
       "challenge",
       "cute",
       "cutekawaii",
       "funart",
-      "drawingdigital",
-      "catburgertutorial"
+      "digital drawing",
+      "cat burger",
+      "my beasts"
     ],
     "published_link": [
       {
@@ -2156,14 +2149,15 @@
           "cat",
           "chibi",
           "kitty",
-          "digitalart",
+          "digital art",
           "burger",
           "challenge",
           "cute",
           "cutekawaii",
           "funart",
-          "drawingdigital",
-          "catburgertutorial"
+          "digital drawing",
+          "cat burger",
+          "my beasts"
         ]
       },
       "jp": {
@@ -2185,11 +2179,11 @@
     "alt": "Sumika Fujimiya",
     "tags": [
       "anime",
-      "animegirl",
+      
       "fanart",
-      "digitalart",
+      "digital art",
       "animecharacter",
-      "animedrawing",
+      "anime drawing",
       "femalecharacter",
       "glasses",
       "glassesgirl",
@@ -2224,11 +2218,10 @@
         "describe": "<p>Fanart anime character :<br><br>Sumika Fujimiya, a childhood friend and also crush of Yosuke's nephew.<br>She with her crush spend each days to watch Yosuke's issekai-life experience memories.<br><br>Anime TV Isekai Ojisan「異世界おじさん」 | Uncle from Another World<br><br>\"Icuras Elran!\"</p>",
         "keywords": [
           "anime",
-          "animegirl",
           "fanart",
-          "digitalart",
+          "digital art",
           "animecharacter",
-          "animedrawing",
+          "anime drawing",
           "femalecharacter",
           "glasses",
           "glassesgirl",
@@ -2265,7 +2258,7 @@
       "./assets/img/fanart/my_dress_up_darling/fa_mddp_003_-_kitagawa_marin_pose.png",
       "./assets/img/fanart/my_dress_up_darling/fa_mddp_004_-_kitagawa_marin_pose.png"
     ],
-    "alt": "Marin Kitagawa fan art by May Suichika",
+    "alt": "Marin Kitagawa fanart by May Suichika",
     "tags": [
       "Marin Kitagawa",
       "My Dress-Up Darling",
@@ -2276,14 +2269,6 @@
       "redraw",
       "mizugi"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#8D6BFF;",
-      "slider": [
-        "width:min(70vw,520px);"
-      ],
-      "rails": []
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -2327,9 +2312,9 @@
     "image": "./assets/img/fanart/fgi_001_-_Female_Sporty_Character.png",
     "alt": "Female Sporty Character",
     "tags": [
-      "animegirl",
+      
       "character",
-      "digitaldrawing",
+      "digital drawing",
       "femalecharacter",
       "inkscape",
       "redhairedgirl",
@@ -2365,9 +2350,8 @@
         "title": "Female Sporty Character",
         "describe": "<p>Redraw + Remake Character Lead Mechanic from Game: Public Defense Corp</p>",
         "keywords": [
-          "animegirl",
           "character",
-          "digitaldrawing",
+          "digital drawing",
           "femalecharacter",
           "inkscape",
           "redhairedgirl",
@@ -2401,25 +2385,17 @@
     "type": "single",
     "category": "redraw",
     "image": "./assets/img/fanart/danmachi/fa_dmc_tc_001_riveria_alf.png",
-    "alt": "Fanart anime character Danmachi: Riveria fan art by May Suichika",
+    "alt": "Fanart anime character Danmachi: Riveria fanart by May Suichika",
     "tags": [
       "Riveria",
       "DanMachi",
       "anime",
-      "fan art",
+      "fanart",
       "digital art",
       "fanart",
       "redraw",
       "elf"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#C4B0FF;",
-      "slider": [
-        "width:min(70vw,520px);"
-      ],
-      "rails": []
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -2441,7 +2417,12 @@
         "keywords": [
           "Riveria",
           "DanMachi",
-          "anime fan art"
+          "anime",
+          "fanart",
+          "digital art",
+          "fanart",
+          "redraw",
+          "elf"
         ]
       },
       "jp": {
@@ -2471,14 +2452,6 @@
       "digital art",
       "swimsuit"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#8D6BFF;",
-      "slider": [
-        "width:min(70vw,520px);"
-      ],
-      "rails": []
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -2502,7 +2475,7 @@
           "Jujutsu Kaisen",
           "JJK",
           "anime",
-          "fan art",
+          "fanart",
           "redraw"
         ]
       },
@@ -2529,21 +2502,9 @@
     "tags": [
       "original character",
       "digital art",
-      "artist portfolio",
+      "digital drawing",
       "elf"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#C4B0FF;",
-      "slider": [
-        "width:min(70vw,520px);",
-        "width:min(70vw,520px);"
-      ],
-      "rails": [
-        null,
-        ""
-      ]
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -2590,20 +2551,12 @@
       "Makima",
       "Chainsaw Man",
       "anime",
-      "fan art",
+      "fanart",
       "fanart",
       "swimsuit",
       "redraw",
       "mizugi"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#C4B0FF;",
-      "slider": [
-        "width:min(70vw,520px);"
-      ],
-      "rails": []
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -2625,7 +2578,7 @@
         "keywords": [
           "Makima",
           "Chainsaw Man",
-          "anime fan art"
+          "anime fanart"
         ]
       },
       "jp": {
@@ -2644,7 +2597,7 @@
     "type": "single",
     "category": "mizugi",
     "image": "./assets/img/fanart/frieren_beyond_journeys_end/fa_fbj_001_frieren.png",
-    "alt": "Frieren fan art by May Suichika",
+    "alt": "Frieren fanart by May Suichika",
     "tags": [
       "Frieren",
       "anime",
@@ -2654,14 +2607,6 @@
       "digital art",
       "swimsuit"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#C4B0FF;",
-      "slider": [
-        "width:min(70vw,520px);"
-      ],
-      "rails": []
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -2683,7 +2628,7 @@
         "keywords": [
           "Frieren",
           "Beyond Journey's End",
-          "anime fan art",
+          "anime fanart",
           "redraw"
         ]
       },
@@ -2713,14 +2658,6 @@
       "sportsuit",
       "redraw"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#8D6BFF;",
-      "slider": [
-        "width:min(70vw,520px);"
-      ],
-      "rails": []
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -2742,7 +2679,11 @@
         "keywords": [
           "Shizuka Mikazuki",
           "ZOM 100",
-          "anime"
+          "anime",
+          "digital art",
+          "fanart",
+          "sportsuit",
+          "redraw"
         ]
       },
       "jp": {
@@ -2766,10 +2707,10 @@
     ],
     "alt": "Fanart of anime and game fate series: Jeanne d'Arc (Ruler)",
     "tags": [
-      "Jeanne",
-      "Arc",
+      "Jeanne d'Arc",
+      "fanart",
       "Ruler",
-      "fgo",
+      "FGO",
       "fate series",
       "fate grand order",
       "fate apocrypha"
@@ -2814,7 +2755,7 @@
     "tags": [
       "Maya Kumashiro",
       "anime",
-      "fan art",
+      "fanart",
       "神代マヤ",
       "Seikimatsu Occult Gakuin",
       "Occult Academy",
@@ -2822,14 +2763,6 @@
       "fanart",
       "redraw"
     ],
-    "style": {
-      "img": "background-position:center;",
-      "overlay": "background-color:#8D6BFF;",
-      "slider": [
-        "width:min(70vw,520px);"
-      ],
-      "rails": []
-    },
     "published_link": [
       {
         "name": "Pinterest",
@@ -2850,7 +2783,7 @@
         "describe": "<p>Maya Kumashiro -> female main character of Anime Seikimatsu Occult Gakuin</p>",
         "keywords": [
           "Maya Kumashiro",
-          "anime fan art"
+          "anime fanart"
         ]
       },
       "jp": {
@@ -2874,30 +2807,16 @@
     ],
     "alt": "Florence Nightingale from Fate Grand Order",
     "tags": [
-      "fategrandorder",
-      "militaryuniform",
-      "fanart",
-      "animegirl",
+      "fate grand order",
+      "fanart",      
       "anime",
-      "military",
       "berserker",
-      "character",
-      "doctor",
-      "drawing",
+      "digital drawing",
       "healer",
-      "pinkhairgirl",
+      "pink hair girl",
       "redraw",
       "servant",
-      "vector",
-      "ahoge",
-      "fgo",
-      "fateseries",
-      "kuudere",
-      "fate_series",
-      "fate_grand_order",
-      "fategrandorderfanart",
-      "fateseriesfanart",
-      "fgofanart"
+      "FGO"
     ],
     "published_link": [
       {
@@ -2918,30 +2837,16 @@
         "title": "Florence Nightingale - Fate Grand Order (FGO)",
         "describe": "<p>Nightingale - Fate Grand Order<br>One of berserker class servants who have the medical skills, and can be enrolled as a support with her noble phantasm.</p>",
         "keywords": [
-          "fategrandorder",
-          "militaryuniform",
+          "fate grand order",
           "fanart",
-          "animegirl",
           "anime",
-          "military",
           "berserker",
-          "character",
-          "doctor",
-          "drawing",
+          "digital drawing",
           "healer",
-          "pinkhairgirl",
+          "pink hair girl",
           "redraw",
           "servant",
-          "vector",
-          "ahoge",
-          "fgo",
-          "fateseries",
-          "kuudere",
-          "fate_series",
-          "fate_grand_order",
-          "fategrandorderfanart",
-          "fateseriesfanart",
-          "fgofanart"
+          "FGO"
         ]
       },
       "jp": {
@@ -2963,23 +2868,20 @@
       "./assets/img/fgo/fafgo_003_-_ushiwakamaru_assassin.jpg",
       "./assets/img/fgo/fafgo_003_-_ushiwakamaru_assassin_a.png"
     ],
-    "style": "gallery",
     "alt": "Ushiwakamaru (Assassin) - Fate Grand Order (FGO)",
     "tags": [
-      "anime",
-      "fgo",
-      "animegirl",
-      "samuraigirl",
-      "swimsuit",
-      "twintails",
-      "servantgirl",
-      "fateseries",
-      "fate_series",
-      "fategrandorder",
-      "twintailsgirl",
-      "fate_grand_order",
-      "fgofanart",
-      "fate_grand_order_fanart"
+        "Ushiwakamaru",
+        "Assassin",
+        "Fate Grand Order",
+        "FGO",
+        "anime",
+        "samurai girl",
+        "swimsuit",
+        "twintails",
+        "servant",
+        "Fate Series",
+        "fanart",
+        "redraw"
     ],
     "published_link": [
       {
@@ -3005,12 +2907,10 @@
         "describe": "<p>Redraw Anime Character :</p><p>Summer version of Ushiwakamaru (牛若丸) as Assassin Class Servant (2nd Ascension Form) - Fate/Grand Order.</p><p>Summer. Swimsuit. Servant. Fate Series</p><p>「これが私の、全力の水遊びです！！！」 ~🎙</p>",
         "keywords": [
           "Ushiwakamaru",
-          "Ushiwakamaru Assassin",
+          "Assassin",
           "Fate Grand Order",
-          "Fate/Grand Order",
           "FGO",
           "anime",
-          "animegirl",
           "samurai girl",
           "swimsuit",
           "twintails",
@@ -3036,29 +2936,21 @@
     "type": "single",
     "category": "fanart",
     "image": "./assets/img/fgo/fafgo_004_-_saint_martha_ruler.jpg",
-    "style": "gallery",
     "alt": "Saint Martha (Ruler) - Fate/Grand Order (FGO)",
-    "tags": [
-      "animegirl",
-      "beach",
-      "digitalart",
-      "fanart",
-      "fategrandorder",
+    "tags": [      
       "anime",
-      "videogamefanart",
-      "bikinibeach",
-      "bikinigirl",
-      "bikinimodel",
-      "bikiniswimsuit",
+      "beach",
+      "digital art",
+      "fanart",
+      "fate series",
+      "fate grand order",
+      "servant",
+      "ruler",
+      "beach",
       "swimsuit",
-      "saintmartha",
-      "fateseries",
-      "swimsuitbikini",
-      "fate_grand_order",
-      "fate_servant",
-      "fateseriesfanart",
-      "fate_grand_order_fanart",
-      "fgo"
+      "bikini",
+      "saint martha",      
+      "FGO"
     ],
     "published_link": [
       {
@@ -3083,29 +2975,19 @@
         "title": "Saint Martha (Ruler) - Fate/Grand Order (FGO)",
         "describe": "<p><strong>Redraw Game Character :</strong><br>Saint Martha (Ruler)<br>Summer version of Martha (マルタ) as Ruler Class Servant (1 Stage) - Fate/Grand Order.</p><p>I think I found out one of her lines to be my favorite.<br>She is getting panicked and bewildered because she forgot that it is Valentine's Day.</p><p>In the conversation, there is an option to trigger her to say this line.</p><p>「姉さん言うな！」。<br>\"Don't call me Big Sis!\"</p><p>Archived from Event Log. Manannan's Souvenir Valentines: The Chocolate Tree and the Goddess's Choice / Chocolate / The Maiden Saint's Breather</p>",
         "keywords": [
-          "Saint Martha",
-          "Martha",
-          "Ruler",
-          "Fate/Grand Order",
-          "FGO",
-          "animegirl",
+          "anime",
           "beach",
-          "digitalart",
+          "digital art",
           "fanart",
-          "videogamefanart",
-          "bikinibeach",
-          "bikinigirl",
-          "bikinimodel",
-          "bikiniswimsuit",
+          "fate series",
+          "fate grand order",
+          "servant",
+          "ruler",
+          "beach",
           "swimsuit",
-          "saintmartha",
-          "fateseries",
-          "swimsuitbikini",
-          "fate_grand_order",
-          "fate_servant",
-          "fateseriesfanart",
-          "fate_grand_order_fanart",
-          "marthafgo"
+          "bikini",
+          "saint martha",      
+          "FGO"
         ]
       },
       "jp": {
@@ -3120,26 +3002,22 @@
     "slug": "MIO",
     "author": "May Suichika",
     "publish_date": "2024-07-31",
-    "rate": "G",
+    "rate": "AO",
     "type": "sub-gallery",
     "category": "fanart",
     "image": [
       "./assets/img/fanart/tsukimichi/fa_tmc_008_-_mio.png",
       "./assets/img/fanart/tsukimichi/fa_tmc_008_-_mio_t.png"
     ],
-    "style": "gallery",
     "alt": "Fanart anime character tsukimichi: MIO",
     "tags": [
-      "animegirl",
-      "beach",
-      "digitalart",
-      "fanart",
       "tsukimichi",
+      "fanart",
+      "digital art",
+      "beach",      
       "anime",
-      "bikinibeach",
-      "bikinigirl",
-      "bikinimodel",
-      "bikiniswimsuit",
+      "beach",
+      "bikini",
       "swimsuit"
     ],
     "published_link": [
@@ -3175,16 +3053,16 @@
     "author": "May Suichika",
     "published_date": "2024-09-15",
     "rate": "G",
-    "type": "single",
+    "type": "sub-gallery",
     "category": "original",
     "image": [
-      "./assets/img/deviantArt/oad_003_-_GigglingGhostsI.png",
-      "./assets/img/deviantArt/oad_003_-_GigglingGhostsII.png"
+      "./assets/img/deviantArt/oad_003_-_GigglingGhostsII.png",
+      "./assets/img/deviantArt/oad_003_-_GigglingGhostsI.png"
+      
     ],
-    "style": "gallery",
     "alt": "Urameshiya",
     "tags": [
-      "digitalart",
+      "digital art",
       "spirit",
       "halloween",
       "spooky",
@@ -3217,6 +3095,59 @@
       "jp": {
         "title": "うらめしや",
         "describe": "うらめしや #GigglingGhosts",
+        "keywords": []
+      }
+    }
+  },
+  {
+    "id": "142333100897",
+    "author": "May Suichika",
+    "publish_date": "2024-09-25",
+    "rate": "G",
+    "type": "single",
+    "category": "original",
+    "image": "./assets/img/my_flavour/mfa_001_-_udon.png",
+    "alt": "Udon",
+    "tags": [
+      "noodle",
+      "udon",
+      "digital art",
+      "digital drawing",
+      "food",      
+      "flavor",
+      "my flavors"
+    ],
+    "published_link": [
+      {
+        "name": "Deviantart",
+        "url": "https://www.deviantart.com/miichika/art/Udon-1102674811"
+      },
+      {
+        "name": "Pinterest",
+        "url": "https://jp.pinterest.com/pin/981995893759579168/"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/p/DAY2mwegdPO/"
+      }
+    ],
+    "detail": {
+      "en": {
+        "title": "Udon",
+        "describe": "<p>How to feed up social media gallery.</p><p>Somebody:<br>Hangout in the luxury coffee house and order the expensive menu. Shoot it then upload as a story.</p><p>Meanwhile me, who I wanna eat udon 🍜 at cheap street food</p>",
+        "keywords": [
+          "udon",
+          "noodle",
+          "food",
+          "digital art",
+          "digital drawing",
+          "flavor",
+          "my flavors"
+        ]
+      },
+      "jp": {
+        "title": "",
+        "describe": "",
         "keywords": []
       }
     }
