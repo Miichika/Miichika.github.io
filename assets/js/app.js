@@ -1,5 +1,6 @@
 
   const DATA_URL="./assets/data/gallery.json";
+  const REMAINING_TIMER_CD = 5;
 
 /* ===== 01 · ORIGINAL CHARACTERS — SLIDER CONFIG =====
    Change these values to control the section 01 slider. */
@@ -63,7 +64,7 @@ open()}})})}function render(){state.filtered=latest(state.data.filter(matches));
 const g=$("#gallery-grid");
 g.innerHTML=state.filtered.map(card).join("");
 $("#empty-state").hidden=state.filtered.length>0;
-$("#gallery-count").textContent=`Showing ${state.filtered.length} latest artwork${state.filtered.length===1?"":"s"}`;
+$("#gallery-count").textContent=` ${state.filtered.length} latest artwork${state.filtered.length===1?"":"s"}`;
 bindCards(g)}function renderFeatured(){
   const frame=$("#original-feature");
   const image=$("#original-slider-image");
@@ -200,7 +201,8 @@ function getAgeRating(){try{return localStorage.getItem(AGE_STORAGE_KEY)||null}c
 function setAgeRating(value){try{localStorage.setItem(AGE_STORAGE_KEY,value)}catch(e){}}
 function isAdultApproved(){return getAgeRating()===AGE_APPROVED}
 function updateAgeVisibility(){state.data.forEach(i=>{i.__ao=i.ageRating==="AO"||i.rating==="AO"||i.rate==="AO"||i.age_rating==="AO"||i.contentRating==="AO"||i.content_rating==="AO"||i.adultOnly===true||i.adult_only===true||(Array.isArray(i.tags)&&i.tags.some(t=>String(t).toLowerCase()==="ao"))})}
-function showAgeGate(){const overlay=$("#ageOverlay"),timer=$("#ageTimer");if(!overlay||getAgeRating())return;overlay.classList.add("open");overlay.setAttribute("aria-hidden","false");document.body.classList.add("modal-open");let remaining=5;timer.textContent=remaining;let done=false;const finish=value=>{if(done)return;done=true;clearInterval(interval);setAgeRating(value);overlay.classList.remove("open");overlay.setAttribute("aria-hidden","true");document.body.classList.remove("modal-open");updateAgeVisibility();renderFeatured();renderRedraw();render();$("#footer-artwork-count").textContent=String(state.data.filter(i=>isAdultApproved()||!i.__ao).length).padStart(4,"0")};const interval=setInterval(()=>{remaining--;timer.textContent=remaining;if(remaining<=0)finish(AGE_DEFAULT)},1000);$("#ageNoButton")?.addEventListener("click",()=>finish(AGE_DEFAULT),{once:true});$("#ageYesButton")?.addEventListener("click",()=>finish(AGE_APPROVED),{once:true})}
+function showAgeGate(){const overlay=$("#ageOverlay"),timer=$("#ageTimer");if(!overlay||getAgeRating())return;overlay.classList.add("open");overlay.setAttribute("aria-hidden","false");document.body.classList.add("modal-open");
+let remaining=REMAINING_TIMER_CD;timer.textContent=remaining;let done=false;const finish=value=>{if(done)return;done=true;clearInterval(interval);setAgeRating(value);overlay.classList.remove("open");overlay.setAttribute("aria-hidden","true");document.body.classList.remove("modal-open");updateAgeVisibility();renderFeatured();renderRedraw();render();$("#footer-artwork-count").textContent=String(state.data.filter(i=>isAdultApproved()||!i.__ao).length).padStart(4,"0")};const interval=setInterval(()=>{remaining--;timer.textContent=remaining;if(remaining<=0)finish(AGE_DEFAULT)},1000);$("#ageNoButton")?.addEventListener("click",()=>finish(AGE_DEFAULT),{once:true});$("#ageYesButton")?.addEventListener("click",()=>finish(AGE_APPROVED),{once:true})}
 function setup(){const s=$("#sidebar"),b=$(".sidebar-backdrop"),t=$(".sidebar-toggle");
 const set=v=>{s.classList.toggle("open",v);
 b.classList.toggle("visible",v);
